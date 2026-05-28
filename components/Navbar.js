@@ -17,7 +17,7 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="container navbar-inner">
           <Link href="/" className="navbar-logo">
-            Marcella<span>.</span>
+            Portale Maternità
           </Link>
 
           <div className="navbar-links">

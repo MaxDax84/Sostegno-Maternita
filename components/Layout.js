@@ -4,8 +4,8 @@ import Footer from "./Footer";
 
 export default function Layout({ children, title, description }) {
   const siteTitle = title
-    ? `${title} | Marcella — Sostegno alla Maternità`
-    : "Marcella — Sostegno alla Maternità Fisiologica e Patologica";
+    ? `${title} | Portale Maternità`
+    : "Portale Maternità — Sostegno alla Maternità Fisiologica e Patologica";
 
   const siteDesc =
     description ||

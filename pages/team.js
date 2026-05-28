@@ -5,7 +5,7 @@ export default function Team() {
   return (
     <Layout
       title="Il Team"
-      description="Conosci le professioniste di Marcella: psicologhe perinatali, ostetriche, fisioterapiste, consulenti per l'allattamento e nutrizioniste specializzate nella maternità."
+      description="Conosci le professioniste di Portale Maternità: psicologhe perinatali, ostetriche, fisioterapiste, consulenti per l'allattamento e nutrizioniste specializzate nella maternità."
     >
       <div className="page-header">
         <div className="container">
