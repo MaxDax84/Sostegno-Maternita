@@ -12,7 +12,7 @@ export default function Home() {
           <div className="hero-content">
             <span className="hero-tag">Professioniste della Maternità</span>
             <h1 className="hero-title">
-              Sostegno alla<br />Maternità
+              Sostegno alla Maternità
             </h1>
             <p className="hero-subtitle">Fisiologica e Patologica</p>
             <p className="hero-desc">
