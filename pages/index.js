@@ -1,0 +1,202 @@
+import Link from "next/link";
+import Layout from "../components/Layout";
+
+export default function Home() {
+  return (
+    <Layout>
+      {/* ── HERO ── */}
+      <section className="hero">
+        <div className="hero-bg-circle" />
+        <div className="hero-bg-circle" />
+        <div className="container">
+          <div className="hero-content">
+            <span className="hero-tag">Professioniste della Maternità</span>
+            <h1 className="hero-title">
+              Sostegno alla<br />Maternità
+            </h1>
+            <p className="hero-subtitle">Fisiologica e Patologica</p>
+            <p className="hero-desc">
+              Un team di professioniste di diversa formazione accomunate
+              dall'interesse e dalla competenza per la maternità in tutte le sue
+              forme. Al tuo fianco, in ogni momento del percorso.
+            </p>
+            <div className="hero-actions">
+              <Link href="/team" className="btn btn-white">
+                Conosci il Team
+              </Link>
+              <Link href="/blog" className="btn btn-white-outline">
+                Leggi il Blog
+              </Link>
+            </div>
+            <div className="hero-stats">
+              <div>
+                <div className="hero-stat-num">5+</div>
+                <div className="hero-stat-label">Professioniste<br />specializzate</div>
+              </div>
+              <div>
+                <div className="hero-stat-num">3+</div>
+                <div className="hero-stat-label">Città<br />d'Italia</div>
+              </div>
+              <div>
+                <div className="hero-stat-num">100%</div>
+                <div className="hero-stat-label">Anche<br />online</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CHI SIAMO ── */}
+      <section className="section chi-siamo" id="chi-siamo">
+        <div className="container">
+          <div className="chi-siamo-grid">
+            <div className="chi-siamo-visual">
+              <p className="chi-siamo-quote">
+                "Diventare madre non è un evento, è una trasformazione. E ogni
+                trasformazione merita cura, ascolto e competenza."
+              </p>
+              <div className="chi-siamo-stats">
+                <div className="stat-box">
+                  <div className="stat-number">5</div>
+                  <div className="stat-label">Specialità<br />integrate</div>
+                </div>
+                <div className="stat-box">
+                  <div className="stat-number">10+</div>
+                  <div className="stat-label">Anni medi<br />di esperienza</div>
+                </div>
+                <div className="stat-box">
+                  <div className="stat-number">∞</div>
+                  <div className="stat-label">Cura<br />senza giudizio</div>
+                </div>
+                <div className="stat-box">
+                  <div className="stat-number">IT</div>
+                  <div className="stat-label">In tutta<br />Italia</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span className="section-label">Chi Siamo</span>
+              <h2 className="section-title">
+                Un villaggio di professioniste<br />per ogni maternità
+              </h2>
+              <div className="chi-siamo-text">
+                <p>
+                  Siamo un gruppo di professioniste di diversa formazione e
+                  specialità — psicologhe perinatali, ostetriche, fisioterapiste,
+                  consulenti per l'allattamento, nutrizioniste — accomunate
+                  dall'interesse profondo per la maternità in tutte le sue
+                  dimensioni.
+                </p>
+                <p>
+                  Ci siamo incontrate lavorando in questo campo e abbiamo
+                  deciso di costruire qualcosa insieme: un punto di riferimento
+                  integrato per le donne che vivono la gravidanza, il parto e il
+                  post-partum, sia quando tutto va bene, sia quando qualcosa è
+                  più difficile del previsto.
+                </p>
+                <p>
+                  La nostra visione è semplice: ogni madre merita supporto
+                  professionale, umano e privo di giudizio. Nessuna deve
+                  affrontare questo percorso da sola.
+                </p>
+              </div>
+              <Link href="/team" className="btn btn-primary" style={{ marginTop: 8 }}>
+                Conosci le professioniste →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── COSA FACCIAMO ── */}
+      <section className="section cosa-facciamo" id="cosa-facciamo">
+        <div className="container">
+          <div className="features-intro">
+            <span className="section-label">Cosa Facciamo</span>
+            <h2 className="section-title">
+              Supporto su misura,<br />ovunque tu sia
+            </h2>
+            <p className="section-desc">
+              Lavoriamo in diverse città d'Italia, sia in presenza che online,
+              sia con gruppi che individualmente. Ogni percorso è costruito
+              intorno a te.
+            </p>
+          </div>
+
+          <div className="features-grid">
+            <div className="feature-card">
+              <div className="feature-icon">🗺️</div>
+              <div className="feature-title">In tutta Italia</div>
+              <p className="feature-desc">
+                Le nostre professioniste operano a Milano, Roma, Torino,
+                Bologna e altre città. Trova chi è vicina a te.
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">💻</div>
+              <div className="feature-title">Online</div>
+              <p className="feature-desc">
+                Tutte le nostre consulenze sono disponibili anche in
+                modalità online — senza barriere geografiche, nei tuoi
+                tempi.
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">👤</div>
+              <div className="feature-title">Percorsi individuali</div>
+              <p className="feature-desc">
+                Colloqui, consulenze e follow-up personalizzati con la
+                professionista più adatta alle tue esigenze specifiche.
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">👥</div>
+              <div className="feature-title">Gruppi di supporto</div>
+              <p className="feature-desc">
+                Gruppi tematici per neomamme, mamme in attesa, donne
+                che attraversano una maternità difficile. Condividere
+                aiuta.
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">🏥</div>
+              <div className="feature-title">Gravidanza patologica</div>
+              <p className="feature-desc">
+                Sostegno specializzato per gravidanze ad alto rischio,
+                lutti perinatali, infertilità e percorsi di PMA.
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">🌿</div>
+              <div className="feature-title">Approccio integrato</div>
+              <p className="feature-desc">
+                Psicologia, ostetricia, fisioterapia, allattamento e
+                nutrizione: professioniste diverse che lavorano in
+                sinergia per te.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ── */}
+      <section className="section cta-strip">
+        <div className="container">
+          <h2>Non devi affrontarlo da sola</h2>
+          <p>
+            Qualunque sia il tuo momento — prima, durante o dopo la gravidanza —
+            c'è una professionista pronta ad ascoltarti.
+          </p>
+          <div className="cta-actions">
+            <Link href="/team" className="btn btn-white">
+              Trova la tua professionista
+            </Link>
+            <Link href="/blog" className="btn btn-white-outline">
+              Leggi i nostri articoli
+            </Link>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}
