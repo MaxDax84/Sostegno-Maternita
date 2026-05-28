@@ -2,54 +2,63 @@ import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import "../styles/globals.css";
 
-const DURATION = 320;
+// Durata di ciascuna fase (copertura e rivelazione)
+const FADE = 240;
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const el = useRef(null);
-  const timer = useRef(null);
+  const overlay = useRef(null);
+  const revealTimer = useRef(null);
 
   useEffect(() => {
-    const node = el.current;
-    if (!node) return;
+    const el = overlay.current;
+    if (!el) return;
 
-    const fadeOut = () => {
-      clearTimeout(timer.current);
-      node.style.opacity = "0";
-      node.style.transform = "translateY(8px)";
+    // 1. Copre la pagina attuale con l'overlay
+    const cover = () => {
+      clearTimeout(revealTimer.current);
+      el.style.opacity = "1";
+      el.style.pointerEvents = "all";
     };
 
-    const fadeIn = () => {
-      // aspetta che il fade-out sia completato, poi scrolla in cima e riappare
-      timer.current = setTimeout(() => {
+    // 2. Aspetta che l'overlay sia completamente opaco (FADE ms),
+    //    poi scrolla in cima e rivela la nuova pagina
+    const reveal = () => {
+      revealTimer.current = setTimeout(() => {
         window.scrollTo(0, 0);
-        node.style.opacity = "1";
-        node.style.transform = "translateY(0)";
-      }, DURATION);
+        el.style.opacity = "0";
+        el.style.pointerEvents = "none";
+      }, FADE);
     };
 
-    router.events.on("routeChangeStart", fadeOut);
-    router.events.on("routeChangeComplete", fadeIn);
-    router.events.on("routeChangeError", fadeIn);
+    router.events.on("routeChangeStart", cover);
+    router.events.on("routeChangeComplete", reveal);
+    router.events.on("routeChangeError", reveal);
 
     return () => {
-      clearTimeout(timer.current);
-      router.events.off("routeChangeStart", fadeOut);
-      router.events.off("routeChangeComplete", fadeIn);
-      router.events.off("routeChangeError", fadeIn);
+      clearTimeout(revealTimer.current);
+      router.events.off("routeChangeStart", cover);
+      router.events.off("routeChangeComplete", reveal);
+      router.events.off("routeChangeError", reveal);
     };
   }, [router.events]);
 
   return (
-    <div
-      ref={el}
-      style={{
-        opacity: 1,
-        transform: "translateY(0)",
-        transition: `opacity ${DURATION}ms ease, transform ${DURATION}ms ease`,
-      }}
-    >
+    <>
+      {/* Overlay che copre la pagina durante il cambio route */}
+      <div
+        ref={overlay}
+        style={{
+          position: "fixed",
+          inset: 0,
+          background: "#F6F2EC",
+          zIndex: 9999,
+          opacity: 0,
+          pointerEvents: "none",
+          transition: `opacity ${FADE}ms ease`,
+        }}
+      />
       <Component {...pageProps} />
-    </div>
+    </>
   );
 }
