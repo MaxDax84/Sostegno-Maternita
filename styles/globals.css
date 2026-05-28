@@ -227,7 +227,7 @@ p { line-height: 1.7; }
   font-family: var(--font-serif);
   font-size: clamp(1.05rem, 2.5vw, 1.55rem);
   font-style: italic;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.88);
   margin-bottom: 28px;
 }
 .hero-desc {
@@ -255,7 +255,7 @@ p { line-height: 1.7; }
 }
 .hero-stat-label {
   font-size: 0.78rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.88);
   margin-top: 2px;
 }
 
