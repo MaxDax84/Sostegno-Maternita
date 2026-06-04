@@ -770,6 +770,26 @@ p { line-height: 1.7; }
   color: rgba(255,255,255,0.3);
 }
 
+/* ── SFONDO FARFALLE ───────────────────────────────────── */
+.chi-siamo {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+    url('/sfondo-farfalle.jpg');
+  background-size: 100%, 320px;
+  background-repeat: no-repeat, repeat;
+}
+.cosa-facciamo,
+.team-section,
+.blog-section,
+.article-wrapper,
+.member-wrapper {
+  background-image:
+    linear-gradient(rgba(246,242,236,0.9), rgba(246,242,236,0.9)),
+    url('/sfondo-farfalle.jpg');
+  background-size: 100%, 320px;
+  background-repeat: no-repeat, repeat;
+}
+
 /* ── RESPONSIVE ────────────────────────────────────────── */
 
 /* Large laptop: footer a 2 colonne prima che sia troppo stretta */
