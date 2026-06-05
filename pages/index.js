@@ -35,13 +35,7 @@ export default function Home() {
       {/* ── CHI SIAMO ── */}
       <section className="section chi-siamo" id="chi-siamo">
         <div className="container">
-          <div className="chi-siamo-grid">
-            <div className="chi-siamo-visual">
-              <p className="chi-siamo-quote">
-                "Diventare madre non è un evento, è una trasformazione. E ogni
-                trasformazione merita cura, ascolto e competenza."
-              </p>
-            </div>
+          <div>
             <div>
               <span className="section-label">Chi Siamo</span>
               <h2 className="section-title">
@@ -72,7 +66,6 @@ export default function Home() {
                 Conosci le professioniste →
               </Link>
             </div>
-          </div>
         </div>
       </section>
 

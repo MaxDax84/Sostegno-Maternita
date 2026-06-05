@@ -926,6 +926,21 @@ p { line-height: 1.7; }
   background-position: 0 0, center;
 }
 
+/* Su mobile background-attachment:fixed non funziona su iOS/Safari:
+   si torna a scroll mantenendo però l'immagine visibile */
+@media (max-width: 1024px) {
+  .chi-siamo,
+  .cosa-facciamo,
+  .team-section,
+  .blog-section,
+  .article-wrapper,
+  .member-wrapper {
+    background-attachment: scroll, scroll;
+    background-size: 100%, cover;
+    background-position: 0 0, center;
+  }
+}
+
 /* ── RESPONSIVE ────────────────────────────────────────── */
 
 /* Large laptop: footer a 2 colonne prima che sia troppo stretta */
