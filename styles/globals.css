@@ -925,17 +925,6 @@ p { line-height: 1.7; }
   background-repeat: no-repeat, no-repeat;
   background-position: 0 0, center;
 }
-/* Fallback mobile: fixed non funziona bene su iOS */
-@media (max-width: 768px) {
-  .chi-siamo,
-  .cosa-facciamo,
-  .team-section,
-  .blog-section,
-  .article-wrapper,
-  .member-wrapper {
-    background-attachment: scroll, scroll;
-  }
-}
 
 /* ── RESPONSIVE ────────────────────────────────────────── */
 
