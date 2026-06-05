@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import { teamMembers } from "../../data/team";
+import { posts } from "../../data/posts";
 
 export async function getStaticPaths() {
   return {
@@ -11,10 +12,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const member = teamMembers.find((m) => m.slug === params.slug) ?? null;
-  return { props: { member } };
+  const memberPosts = posts.filter((p) => p.authorSlug === params.slug);
+  return { props: { member, memberPosts } };
 }
 
-export default function TeamMember({ member }) {
+export default function TeamMember({ member, memberPosts }) {
   if (!member) return null;
 
   return (
@@ -113,6 +115,21 @@ export default function TeamMember({ member }) {
                       <li key={e}>{e}</li>
                     ))}
                   </ul>
+                </div>
+              )}
+
+              {memberPosts.length > 0 && (
+                <div className="member-section">
+                  <h2>Articoli</h2>
+                  <div className="member-articles">
+                    {memberPosts.map((p) => (
+                      <Link key={p.slug} href={`/blog/${p.slug}`} className="member-article-item">
+                        <span className="member-article-category">{p.category}</span>
+                        <span className="member-article-title">{p.title}</span>
+                        <span className="member-article-read">{p.readTime} →</span>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </main>

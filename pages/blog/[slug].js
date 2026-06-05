@@ -95,9 +95,18 @@ export default function BlogPost({ post, related }) {
                   {post.authorAvatar}
                 </div>
                 <div>
-                  <div style={{ fontWeight: 600, fontSize: "0.95rem", color: "var(--text)" }}>
-                    {post.author}
-                  </div>
+                  {post.authorSlug ? (
+                    <Link
+                      href={`/team/${post.authorSlug}`}
+                      style={{ fontWeight: 600, fontSize: "0.95rem", color: "var(--green)", textDecoration: "underline", textUnderlineOffset: 3 }}
+                    >
+                      {post.author}
+                    </Link>
+                  ) : (
+                    <div style={{ fontWeight: 600, fontSize: "0.95rem", color: "var(--text)" }}>
+                      {post.author}
+                    </div>
+                  )}
                   <div style={{ fontSize: "0.82rem", color: "var(--text-light)", marginTop: 2 }}>
                     {post.authorRole}
                   </div>
