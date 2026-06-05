@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-  --green: #4E7B6D;
-  --green-light: #6B9E8F;
-  --green-bg: #EDF3F0;
-  --green-dark: #3A5E52;
+  --green: #4A7BA7;
+  --green-light: #6A9DC4;
+  --green-bg: #EBF2F8;
+  --green-dark: #2D5A82;
   --accent: #BC7A55;
   --accent-light: #E4C0A5;
   --cream: #F6F2EC;
@@ -174,7 +174,7 @@ p { line-height: 1.7; }
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(145deg, #2F4D43 0%, var(--green) 55%, #6B9E8F 100%);
+  background: linear-gradient(145deg, #1D3A5C 0%, var(--green) 55%, #7AAFD4 100%);
   position: relative;
   overflow: hidden;
   padding-top: 72px;
@@ -367,7 +367,7 @@ p { line-height: 1.7; }
 
 /* ── PAGE HEADER ───────────────────────────────────────── */
 .page-header {
-  background: linear-gradient(145deg, #2F4D43, var(--green));
+  background: linear-gradient(145deg, #1D3A5C, var(--green));
   color: var(--white);
   padding: clamp(108px, 12vw, 156px) 0 clamp(52px, 7vw, 88px);
   text-align: center;
@@ -744,7 +744,7 @@ p { line-height: 1.7; }
 
 /* ── FOOTER ────────────────────────────────────────────── */
 .footer {
-  background: #192920;
+  background: #12243A;
   color: rgba(255,255,255,0.65);
   padding: 72px 0 32px;
 }
@@ -773,10 +773,11 @@ p { line-height: 1.7; }
 /* ── SFONDO FARFALLE ───────────────────────────────────── */
 .chi-siamo {
   background-image:
-    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+    linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
     url('/sfondo-farfalle.jpg');
-  background-size: 100%, 320px;
-  background-repeat: no-repeat, repeat;
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, center;
 }
 .cosa-facciamo,
 .team-section,
@@ -784,10 +785,11 @@ p { line-height: 1.7; }
 .article-wrapper,
 .member-wrapper {
   background-image:
-    linear-gradient(rgba(246,242,236,0.9), rgba(246,242,236,0.9)),
+    linear-gradient(rgba(246,242,236,0.88), rgba(246,242,236,0.88)),
     url('/sfondo-farfalle.jpg');
-  background-size: 100%, 320px;
-  background-repeat: no-repeat, repeat;
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, center;
 }
 
 /* ── RESPONSIVE ────────────────────────────────────────── */
