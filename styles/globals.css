@@ -900,44 +900,43 @@ p { line-height: 1.7; }
 }
 
 /* ── SFONDO FARFALLE ───────────────────────────────────── */
-/* background-attachment: fixed sull'immagine = posizione relativa al viewport,
-   non alla sezione → tutte le sezioni mostrano la stessa porzione dell'immagine
-   dando l'effetto di uno sfondo unico continuo */
-.chi-siamo {
-  background-image:
-    linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
-    url('/sfondo-farfalle.jpg');
-  background-attachment: scroll, fixed;
-  background-size: 100%, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, center;
-}
+/* Tecnica ::before con opacity: funziona su tutti i browser incluso iOS Safari.
+   background-attachment:fixed sul pseudo-elemento dà l'effetto continuo su desktop;
+   su mobile si usa scroll (iOS ignora fixed su elementi non-body). */
+.chi-siamo,
 .cosa-facciamo,
 .team-section,
 .blog-section,
 .article-wrapper,
 .member-wrapper {
-  background-image:
-    linear-gradient(rgba(246,242,236,0.75), rgba(246,242,236,0.75)),
-    url('/sfondo-farfalle.jpg');
-  background-attachment: scroll, fixed;
-  background-size: 100%, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, center;
+  position: relative;
+  isolation: isolate;
 }
-
-/* Su mobile background-attachment:fixed non funziona su iOS/Safari:
-   si torna a scroll mantenendo però l'immagine visibile */
+.chi-siamo::before,
+.cosa-facciamo::before,
+.team-section::before,
+.blog-section::before,
+.article-wrapper::before,
+.member-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/sfondo-farfalle.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: -1;
+}
 @media (max-width: 1024px) {
-  .chi-siamo,
-  .cosa-facciamo,
-  .team-section,
-  .blog-section,
-  .article-wrapper,
-  .member-wrapper {
-    background-attachment: scroll, scroll;
-    background-size: 100%, cover;
-    background-position: 0 0, center;
+  .chi-siamo::before,
+  .cosa-facciamo::before,
+  .team-section::before,
+  .blog-section::before,
+  .article-wrapper::before,
+  .member-wrapper::before {
+    background-attachment: scroll;
   }
 }
 
