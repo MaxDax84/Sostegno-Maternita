@@ -28,20 +28,6 @@ export default function Home() {
                 Leggi il Blog
               </Link>
             </div>
-            <div className="hero-stats">
-              <div>
-                <div className="hero-stat-num">5+</div>
-                <div className="hero-stat-label">Professioniste<br />specializzate</div>
-              </div>
-              <div>
-                <div className="hero-stat-num">3+</div>
-                <div className="hero-stat-label">Città<br />d'Italia</div>
-              </div>
-              <div>
-                <div className="hero-stat-num">100%</div>
-                <div className="hero-stat-label">Anche<br />online</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -55,29 +41,11 @@ export default function Home() {
                 "Diventare madre non è un evento, è una trasformazione. E ogni
                 trasformazione merita cura, ascolto e competenza."
               </p>
-              <div className="chi-siamo-stats">
-                <div className="stat-box">
-                  <div className="stat-number">5</div>
-                  <div className="stat-label">Specialità<br />integrate</div>
-                </div>
-                <div className="stat-box">
-                  <div className="stat-number">10+</div>
-                  <div className="stat-label">Anni medi<br />di esperienza</div>
-                </div>
-                <div className="stat-box">
-                  <div className="stat-number">∞</div>
-                  <div className="stat-label">Cura<br />senza giudizio</div>
-                </div>
-                <div className="stat-box">
-                  <div className="stat-number">IT</div>
-                  <div className="stat-label">In tutta<br />Italia</div>
-                </div>
-              </div>
             </div>
             <div>
               <span className="section-label">Chi Siamo</span>
               <h2 className="section-title">
-                Un villaggio di professioniste<br />per ogni maternità
+                Una comunità di professioniste<br />per ogni maternità
               </h2>
               <div className="chi-siamo-text">
                 <p>

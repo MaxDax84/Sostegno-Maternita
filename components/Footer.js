@@ -25,16 +25,7 @@ export default function Footer() {
             <Link href="/blog">Blog</Link>
           </div>
 
-          <div className="footer-col">
-            <h4>Aree di competenza</h4>
-            <span>Psicologia perinatale</span>
-            <span>Ostetricia</span>
-            <span>Fisioterapia pelvica</span>
-            <span>Consulenza allattamento</span>
-            <span>Nutrizione</span>
-          </div>
-
-          <div className="footer-col">
+<div className="footer-col">
             <h4>Contatti</h4>
             <Link href="mailto:mmarcone@me.com">mmarcone@me.com</Link>
             <span style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.4)", marginTop: 8 }}>
