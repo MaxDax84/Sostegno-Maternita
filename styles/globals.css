@@ -900,10 +900,14 @@ p { line-height: 1.7; }
 }
 
 /* ── SFONDO FARFALLE ───────────────────────────────────── */
+/* background-attachment: fixed sull'immagine = posizione relativa al viewport,
+   non alla sezione → tutte le sezioni mostrano la stessa porzione dell'immagine
+   dando l'effetto di uno sfondo unico continuo */
 .chi-siamo {
   background-image:
     linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
     url('/sfondo-farfalle.jpg');
+  background-attachment: scroll, fixed;
   background-size: 100%, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: 0 0, center;
@@ -916,9 +920,21 @@ p { line-height: 1.7; }
   background-image:
     linear-gradient(rgba(246,242,236,0.75), rgba(246,242,236,0.75)),
     url('/sfondo-farfalle.jpg');
+  background-attachment: scroll, fixed;
   background-size: 100%, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: 0 0, center;
+}
+/* Fallback mobile: fixed non funziona bene su iOS */
+@media (max-width: 768px) {
+  .chi-siamo,
+  .cosa-facciamo,
+  .team-section,
+  .blog-section,
+  .article-wrapper,
+  .member-wrapper {
+    background-attachment: scroll, scroll;
+  }
 }
 
 /* ── RESPONSIVE ────────────────────────────────────────── */
