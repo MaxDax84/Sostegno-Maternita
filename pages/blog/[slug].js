@@ -68,7 +68,7 @@ export default function BlogPost({ post, related }) {
                 <span className="article-banner-category">{post.category}</span>
                 <h1 className="article-banner-title">{post.title}</h1>
                 <div className="article-banner-meta">
-                  {post.date} · {post.readTime} di lettura
+                  {post.readTime} di lettura
                 </div>
               </div>
 
@@ -102,7 +102,7 @@ export default function BlogPost({ post, related }) {
                     {post.authorRole}
                   </div>
                   <div style={{ fontSize: "0.82rem", color: "var(--text-light)", marginTop: 2 }}>
-                    Articolo del {post.date}
+                    {post.readTime} di lettura
                   </div>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function BlogPost({ post, related }) {
                 {related.map((p) => (
                   <Link href={`/blog/${p.slug}`} className="sidebar-post" key={p.id}>
                     <div className="sidebar-post-title">{p.title}</div>
-                    <div className="sidebar-post-date">{p.date} · {p.readTime}</div>
+                    <div className="sidebar-post-date">{p.readTime}</div>
                   </Link>
                 ))}
               </div>

@@ -41,7 +41,7 @@ export default function Blog() {
                   <p className="blog-card-excerpt">{post.excerpt}</p>
                   <div className="blog-card-footer">
                     <span className="blog-card-meta">
-                      {post.date} · {post.readTime}
+                      {post.readTime}
                     </span>
                     <span className="blog-read-more">
                       Leggi →
