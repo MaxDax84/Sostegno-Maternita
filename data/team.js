@@ -5,6 +5,7 @@ export const teamMembers = [
     name: "Dott.ssa Marcella Marcone",
     role: "Psicologa e Psicoterapeuta",
     city: "Milano",
+    address: "Via Sansovino 3, Milano",
     photo: "/marcella-marcone.jpg",
     avatar: "MM",
     color: "#4A7BA7",

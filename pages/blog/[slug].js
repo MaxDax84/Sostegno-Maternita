@@ -127,7 +127,7 @@ export default function BlogPost({ post, related }) {
                   la professionista più adatta a te.
                 </p>
                 <a
-                  href="mailto:info@marcella.it"
+                  href="mailto:mmarcone@me.com"
                   className="btn btn-primary"
                   style={{ width: "100%", justifyContent: "center", fontSize: "0.85rem" }}
                 >

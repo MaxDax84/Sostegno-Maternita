@@ -56,7 +56,7 @@ export default function TeamMember({ member }) {
                   <div className="member-photo-name">{member.name}</div>
                   <div className="member-photo-role">{member.role}</div>
                   <div className="member-photo-city">
-                    📍 {member.city} · {member.experience}
+                    📍 {member.address || member.city} · {member.experience}
                   </div>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function TeamMember({ member }) {
                 </div>
               )}
 
-              <a href="mailto:info@marcella.it" className="btn btn-primary member-cta-btn">
+              <a href="mailto:mmarcone@me.com" className="btn btn-primary member-cta-btn">
                 Prenota una consulenza
               </a>
             </aside>
@@ -128,7 +128,7 @@ export default function TeamMember({ member }) {
             valutare insieme il percorso più adatto a te.
           </p>
           <div className="cta-actions">
-            <a href="mailto:info@marcella.it" className="btn btn-white">
+            <a href="mailto:mmarcone@me.com" className="btn btn-white">
               Scrivici
             </a>
             <Link href="/team" className="btn btn-white-outline">

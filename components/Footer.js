@@ -36,7 +36,7 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>Contatti</h4>
-            <Link href="mailto:info@marcella.it">info@marcella.it</Link>
+            <Link href="mailto:mmarcone@me.com">mmarcone@me.com</Link>
             <span style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.4)", marginTop: 8 }}>
               Lavoriamo in tutta Italia, in presenza e online.
             </span>

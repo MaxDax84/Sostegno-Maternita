@@ -773,7 +773,7 @@ p { line-height: 1.7; }
 /* ── SFONDO FARFALLE ───────────────────────────────────── */
 .chi-siamo {
   background-image:
-    linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+    linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
     url('/sfondo-farfalle.jpg');
   background-size: 100%, cover;
   background-repeat: no-repeat, no-repeat;
@@ -785,7 +785,7 @@ p { line-height: 1.7; }
 .article-wrapper,
 .member-wrapper {
   background-image:
-    linear-gradient(rgba(246,242,236,0.88), rgba(246,242,236,0.88)),
+    linear-gradient(rgba(246,242,236,0.75), rgba(246,242,236,0.75)),
     url('/sfondo-farfalle.jpg');
   background-size: 100%, cover;
   background-repeat: no-repeat, no-repeat;

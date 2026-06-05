@@ -30,7 +30,7 @@ export default function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <Link href="mailto:info@marcella.it" className="navbar-cta">
+            <Link href="mailto:mmarcone@me.com" className="navbar-cta">
               Contattaci
             </Link>
           </div>
@@ -53,7 +53,7 @@ export default function Navbar() {
             {l.label}
           </Link>
         ))}
-        <Link href="mailto:info@marcella.it" onClick={() => setOpen(false)}>
+        <Link href="mailto:mmarcone@me.com" onClick={() => setOpen(false)}>
           Contattaci
         </Link>
       </div>

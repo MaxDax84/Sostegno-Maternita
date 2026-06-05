@@ -81,7 +81,7 @@ export default function Team() {
             alla tua situazione e alle tue esigenze.
           </p>
           <div className="cta-actions">
-            <a href="mailto:info@marcella.it" className="btn btn-white">
+            <a href="mailto:mmarcone@me.com" className="btn btn-white">
               Contattaci
             </a>
           </div>
