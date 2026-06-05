@@ -36,36 +36,35 @@ export default function Home() {
       <section className="section chi-siamo" id="chi-siamo">
         <div className="container">
           <div>
-            <div>
-              <span className="section-label">Chi Siamo</span>
-              <h2 className="section-title">
-                Una comunità di professioniste<br />per ogni maternità
-              </h2>
-              <div className="chi-siamo-text">
-                <p>
-                  Siamo un gruppo di professioniste di diversa formazione e
-                  specialità — psicologhe perinatali, ostetriche, fisioterapiste,
-                  consulenti per l'allattamento, nutrizioniste — accomunate
-                  dall'interesse profondo per la maternità in tutte le sue
-                  dimensioni.
-                </p>
-                <p>
-                  Ci siamo incontrate lavorando in questo campo e abbiamo
-                  deciso di costruire qualcosa insieme: un punto di riferimento
-                  integrato per le donne che vivono la gravidanza, il parto e il
-                  post-partum, sia quando tutto va bene, sia quando qualcosa è
-                  più difficile del previsto.
-                </p>
-                <p>
-                  La nostra visione è semplice: ogni madre merita supporto
-                  professionale, umano e privo di giudizio. Nessuna deve
-                  affrontare questo percorso da sola.
-                </p>
-              </div>
-              <Link href="/team" className="btn btn-primary" style={{ marginTop: 8 }}>
-                Conosci le professioniste →
-              </Link>
+            <span className="section-label">Chi Siamo</span>
+            <h2 className="section-title">
+              Una comunità di professioniste<br />per ogni maternità
+            </h2>
+            <div className="chi-siamo-text">
+              <p>
+                Siamo un gruppo di professioniste di diversa formazione e
+                specialità — psicologhe perinatali, ostetriche, fisioterapiste,
+                consulenti per l'allattamento, nutrizioniste — accomunate
+                dall'interesse profondo per la maternità in tutte le sue
+                dimensioni.
+              </p>
+              <p>
+                Ci siamo incontrate lavorando in questo campo e abbiamo
+                deciso di costruire qualcosa insieme: un punto di riferimento
+                integrato per le donne che vivono la gravidanza, il parto e il
+                post-partum, sia quando tutto va bene, sia quando qualcosa è
+                più difficile del previsto.
+              </p>
+              <p>
+                La nostra visione è semplice: ogni madre merita supporto
+                professionale, umano e privo di giudizio. Nessuna deve
+                affrontare questo percorso da sola.
+              </p>
             </div>
+            <Link href="/team" className="btn btn-primary" style={{ marginTop: 8 }}>
+              Conosci le professioniste →
+            </Link>
+          </div>
         </div>
       </section>
 
