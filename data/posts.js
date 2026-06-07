@@ -1,5 +1,61 @@
 export const posts = [
   {
+    id: 3,
+    slug: "scegliere-servizio-educativo-prima-infanzia",
+    title: "Scegliere il servizio educativo per la prima infanzia",
+    excerpt: "Come orientarsi tra nidi, micronidi e servizi integrativi per trovare il posto giusto per il proprio figlio. Una guida pratica per genitori consapevoli.",
+    category: "Prima Infanzia",
+    author: "Chiara Mauri",
+    authorSlug: "chiara-mauri",
+    authorRole: "Educatrice per la Prima Infanzia",
+    authorAvatar: "CM",
+    authorColor: "#5B8E9F",
+    readTime: "5 min",
+    bgColor: "#3A6E7F",
+    content: [
+      {
+        type: "p",
+        text: "La scelta di iscrivere il proprio figlio a un servizio per la prima infanzia pone genitori e caregiver in una posizione di grande vulnerabilità. Spesso manca un supporto concreto e ci si scontra con pregiudizi che accrescono ansia e preoccupazioni: come scegliere un servizio educativo? Avrò fatto la scelta giusta?"
+      },
+      {
+        type: "p",
+        text: "È fondamentale riconoscere che tutte le emozioni che emergono in questa fase sono legittime. Non esistono emozioni giuste o sbagliate: state prendendo decisioni per un essere che dipende completamente da voi e ogni sentimento è valido."
+      },
+      {
+        type: "h2",
+        text: "Quanti tipi di servizi esistono?"
+      },
+      {
+        type: "p",
+        text: "Esistono diverse tipologie di servizi educativi, ognuna con caratteristiche specifiche. I nidi d'infanzia e i micronidi accolgono bambini dai 3 ai 36 mesi, promuovendo cura, autonomia e socializzazione. Le sezioni primavera accolgono bambini dai 24 ai 36 mesi, spesso integrate con scuole dell'infanzia per garantire continuità. Esistono poi servizi integrativi come gli spazi gioco (12-36 mesi, massimo cinque ore giornaliere), i centri per bambini e famiglie e i nidi famiglia, che offrono un ambiente più raccolto e domiciliare."
+      },
+      {
+        type: "h2",
+        text: "Come scegliere: visitate la struttura"
+      },
+      {
+        type: "p",
+        text: "Una volta individuata la tipologia, è essenziale visitare la struttura. Chiedete alla coordinatrice se è possibile vedere gli spazi: osservateli, domandate se sono sicuri e stimolanti. Se il vostro piccolo è già nato, portatelo con voi e immaginatelo in quel contesto. Tenete conto dei suoi bisogni specifici — ad esempio, se avete un bambino ad alto contatto, verificate che il servizio disponga di fasce o marsupi."
+      },
+      {
+        type: "p",
+        text: "La visita è anche l'occasione per fare domande: dagli orari di apertura e le tipologie di rette, fino a quelle più specifiche. Qual è l'approccio educativo? Come si svolge la giornata? Qual è il rapporto numerico tra educatrici e bambini? Qual è la formazione del personale?"
+      },
+      {
+        type: "h2",
+        text: "Dopo la scelta: come capire se è quella giusta"
+      },
+      {
+        type: "p",
+        text: "I bambini, anche molto piccoli, comunicano se stanno bene o meno: osservate il loro comportamento. Il personale educativo dovrebbe essere disponibile a rispondere alle vostre domande e offrirvi supporto. Confrontarsi con altri genitori può essere utile, ma ricordate che ogni esperienza è soggettiva: ciò che è adatto a un bambino e alla sua famiglia potrebbe non esserlo per un altro."
+      },
+      {
+        type: "highlight",
+        text: "Un proverbio africano dice che «per crescere un bambino ci vuole un villaggio»: il servizio educativo che sceglierete diventerà parte del vostro villaggio. Prendetevi il tempo necessario per questa scelta e affidatevi al vostro istinto — il vostro bambino vi mostrerà se siete sulla strada giusta."
+      }
+    ]
+  },
+  {
     id: 1,
     slug: "programmare-la-gravidanza",
     title: "È possibile programmare la gravidanza?",

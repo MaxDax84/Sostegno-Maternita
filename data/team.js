@@ -31,4 +31,28 @@ export const teamMembers = [
       "Diario della gravidanza",
     ],
   },
+  {
+    id: 1,
+    slug: "chiara-mauri",
+    name: "Chiara Mauri",
+    role: "Educatrice per la Prima Infanzia",
+    city: "Como",
+    avatar: "CM",
+    color: "#5B8E9F",
+    bgColor: "#3A6E7F",
+    bio: "Educatrice professionale specializzata nella fascia 0-36 mesi. Con oltre quattro anni di esperienza in asili nido e micronidi della provincia di Como e Lecco, accompagna bambini e famiglie nel delicato percorso dell'ambientamento e della crescita. Organizza laboratori con materiali destrutturati e naturali e promuove l'educazione in outdoor.",
+    specialties: [
+      "Prima infanzia 0-36 mesi",
+      "Ambientamento partecipato",
+      "Laboratori con materiali naturali",
+      "Outdoor education",
+    ],
+    modes: ["In presenza – Como e provincia"],
+    experience: "Oltre 4 anni di esperienza",
+    education: [
+      "Corso di Perfezionamento «I primi mille giorni», Università degli Studi di Firenze (2024 – in corso)",
+      "Laurea in Scienze dell'Educazione – Indirizzo Infanzia (L-19), Università degli Studi di Milano-Bicocca (2021)",
+      "Diploma in Scienze Umane, Istituto Superiore G. Bertacchi, Lecco (2018)",
+    ],
+  },
 ];
