@@ -37,6 +37,7 @@ export const teamMembers = [
     name: "Chiara Mauri",
     role: "Educatrice per la Prima Infanzia",
     city: "Como",
+    photo: "/chiara-mauri.jpg",
     avatar: "CM",
     color: "#5B8E9F",
     bgColor: "#3A6E7F",
