@@ -16,8 +16,8 @@ export default function Blog() {
           <h1>Blog</h1>
           <p>
             Articoli scritti dalle nostre professioniste per informare,
-            supportare e accompagnare ogni donna nel suo percorso di
-            maternità.
+            supportare e accompagnare ogni mamma e ogni papà nel proprio
+            percorso di genitorialità.
           </p>
         </div>
       </div>

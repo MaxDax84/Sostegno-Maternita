@@ -19,7 +19,7 @@ export default function Team() {
           <p>
             Professioniste di diversa formazione e specialità, accomunate
             dalla passione per la maternità e dal desiderio di fare la
-            differenza nella vita delle donne.
+            differenza nella vita delle coppie che si avvicinano alla genitorialità.
           </p>
         </div>
       </div>
