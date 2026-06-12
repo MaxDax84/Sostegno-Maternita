@@ -2,6 +2,8 @@ import Link from "next/link";
 import Layout from "../../components/Layout";
 import { teamMembers } from "../../data/team";
 
+const sortedTeam = [...teamMembers].sort((a, b) => a.name.localeCompare(b.name, "it"));
+
 export default function Team() {
   return (
     <Layout
@@ -25,7 +27,7 @@ export default function Team() {
       <section className="section team-section">
         <div className="container">
           <div className="team-grid">
-            {teamMembers.map((member) => (
+            {sortedTeam.map((member) => (
               <Link href={`/team/${member.slug}`} key={member.id} className="team-card-link">
                 <div className="team-card">
                   <div
