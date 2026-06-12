@@ -6,7 +6,7 @@ export const posts = [
     excerpt: "Come orientarsi tra nidi, micronidi e servizi integrativi per trovare il posto giusto per il proprio figlio. Una guida pratica per genitori consapevoli.",
     keywords: "asilo nido, micronido, ambientamento, prima infanzia, nido d'infanzia, sezioni primavera, educazione 0-3 anni, scegliere asilo nido, servizi educativi bambini",
     category: "Prima Infanzia",
-    author: "Chiara Mauri",
+    author: "Dott.ssa Chiara Mauri",
     authorSlug: "chiara-mauri",
     authorRole: "Educatrice per la Prima Infanzia",
     authorAvatar: "CM",
