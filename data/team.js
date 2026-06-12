@@ -40,7 +40,7 @@ export const teamMembers = [
     category: "Prima Infanzia",
     city: "Como",
     photo: "/chiara-mauri.jpg",
-    avatar: "CM",
+    avatar: "DCM",
     color: "#5B8E9F",
     bgColor: "#3A6E7F",
     bio: "Educatrice professionale specializzata nella fascia 0-36 mesi. Con oltre quattro anni di esperienza in asili nido e micronidi della provincia di Como e Lecco, accompagna bambini e famiglie nel delicato percorso dell'ambientamento e della crescita. Organizza laboratori con materiali destrutturati e naturali e promuove l'educazione in outdoor.",

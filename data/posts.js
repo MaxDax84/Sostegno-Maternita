@@ -9,7 +9,7 @@ export const posts = [
     author: "Dott.ssa Chiara Mauri",
     authorSlug: "chiara-mauri",
     authorRole: "Educatrice per la Prima Infanzia",
-    authorAvatar: "CM",
+    authorAvatar: "DCM",
     authorColor: "#5B8E9F",
     readTime: "5 min",
     bgColor: "#3A6E7F",
