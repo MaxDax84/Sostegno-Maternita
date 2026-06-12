@@ -1,9 +1,24 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "Portale Maternità",
+  "url": process.env.SITE_URL,
+  "description":
+    "Team di professioniste specializzate in supporto psicologico perinatale: gravidanza, parto, depressione post-partum, infertilità, PMA, aborto, morte fetale, ambientamento asilo nido.",
+  "areaServed": { "@type": "Country", "name": "Italy" },
+  "availableLanguage": "Italian",
+};
+
 export default function Home() {
   return (
-    <Layout>
+    <Layout
+      canonicalPath="/"
+      keywords="gravidanza, parto, depressione post partum, infertilità, PMA, aborto, morte fetale, lutto perinatale, psicologia perinatale, ambientamento asilo nido, educazione prima infanzia, supporto maternità Milano, psicologa gravidanza"
+      jsonLd={jsonLd}
+    >
       {/* ── HERO ── */}
       <section className="hero">
         <div className="hero-bg-circle" />

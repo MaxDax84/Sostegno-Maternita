@@ -6,7 +6,9 @@ export default function Blog() {
   return (
     <Layout
       title="Blog"
-      description="Articoli sulla maternità fisiologica e patologica: depressione post-partum, allattamento, pavimento pelvico, nutrizione in gravidanza e molto altro."
+      description="Articoli su gravidanza, parto, depressione post-partum, aborto, morte fetale, PMA, infertilità, ambientamento asilo nido, ciuccio, pannolino e educazione 0-3 anni. Scritti da professioniste specializzate."
+      keywords="gravidanza, parto, depressione post partum, aborto, morte fetale, PMA, infertilità, ambientamento, asilo nido, ciuccio, pannolino, regole, educazione prima infanzia, psicologia perinatale"
+      canonicalPath="/blog"
     >
       <div className="page-header">
         <div className="container">

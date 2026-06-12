@@ -6,7 +6,9 @@ export default function Team() {
   return (
     <Layout
       title="Il Team"
-      description="Conosci le professioniste di Portale Maternità: psicologhe perinatali, ostetriche, fisioterapiste, consulenti per l'allattamento e nutrizioniste specializzate nella maternità."
+      description="Conosci le professioniste di Portale Maternità: psicologa perinatale specializzata in gravidanza, parto, depressione post-partum, PMA, aborto e morte fetale; educatrice per la prima infanzia specializzata in ambientamento asilo nido."
+      keywords="psicologa perinatale Milano, educatrice prima infanzia Como, gravidanza, parto, depressione post partum, PMA, aborto, morte fetale, ambientamento asilo nido, supporto maternità"
+      canonicalPath="/team"
     >
       <div className="page-header">
         <div className="container">

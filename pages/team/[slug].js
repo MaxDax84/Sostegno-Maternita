@@ -22,7 +22,17 @@ export default function TeamMember({ member, memberPosts }) {
   return (
     <Layout
       title={member.name}
-      description={`Profilo professionale di ${member.name} – ${member.role}`}
+      description={`${member.name} – ${member.role}. ${member.specialties.join(", ")}. ${member.modes.join(", ")}.`}
+      keywords={member.specialties.join(", ").toLowerCase() + ", " + member.city.toLowerCase()}
+      canonicalPath={`/team/${member.slug}`}
+      jsonLd={{
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": member.name,
+        "jobTitle": member.role,
+        "description": member.bio,
+        "worksFor": { "@type": "Organization", "name": "Portale Maternità" },
+      }}
     >
       <div className="page-header page-header-short">
         <div className="container">

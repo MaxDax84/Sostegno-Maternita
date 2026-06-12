@@ -4,6 +4,7 @@ export const posts = [
     slug: "scegliere-servizio-educativo-prima-infanzia",
     title: "Scegliere il servizio educativo per la prima infanzia",
     excerpt: "Come orientarsi tra nidi, micronidi e servizi integrativi per trovare il posto giusto per il proprio figlio. Una guida pratica per genitori consapevoli.",
+    keywords: "asilo nido, micronido, ambientamento, prima infanzia, nido d'infanzia, sezioni primavera, educazione 0-3 anni, scegliere asilo nido, servizi educativi bambini",
     category: "Prima Infanzia",
     author: "Chiara Mauri",
     authorSlug: "chiara-mauri",
@@ -60,6 +61,7 @@ export const posts = [
     slug: "programmare-la-gravidanza",
     title: "È possibile programmare la gravidanza?",
     excerpt: "Grazie ai moderni metodi contraccettivi sembra di poter decidere quando avere un figlio. Ma la biologia ci ricorda che la gravidanza sfugge spesso al nostro controllo.",
+    keywords: "gravidanza, programmare la gravidanza, psicologia della gravidanza, orologio biologico, concepimento, fertilità, trofoblasto, placenta, psicologia perinatale",
     category: "Gravidanza",
     date: "10 gennaio 2025",
     author: "Dott.ssa Marcella Marcone",
@@ -118,82 +120,54 @@ export const posts = [
   },
   {
     id: 2,
-    slug: "infertilita-pre-primaria",
-    title: "L'infertilità pre-primaria",
-    excerpt: "Al di là dell'infertilità primaria e secondaria esiste una condizione poco conosciuta: l'infertilità pre-primaria, in cui certe donne non arrivano mai a provare a procreare. Un'analisi psicologica profonda.",
+    slug: "aspetti-psicologici-paternita",
+    title: "Alcuni aspetti psicologici della paternità",
+    excerpt: "La figura paterna è cambiata, ma le problematiche psicologiche che vive il futuro padre durante la gravidanza restano spesso nell'ombra. Un'analisi dei vissuti emotivi e inconsci della paternità.",
+    keywords: "paternità, psicologia paternità, futuro padre, gravidanza, depressione post partum papà, diventare padre, psicologia perinatale, diade madre bambino",
     category: "Psicologia",
-    date: "15 febbraio 2025",
     author: "Dott.ssa Marcella Marcone",
     authorSlug: "marcella-marcone",
     authorRole: "Psicologa e Psicoterapeuta",
     authorAvatar: "MM",
     authorColor: "#4A7BA7",
-    readTime: "12 min",
-    bgColor: "#1D3A5C",
+    readTime: "5 min",
+    bgColor: "#2A4D6B",
     content: [
       {
         type: "p",
-        text: "Quando si parla di infertilità si deve distinguere tra due situazioni diverse: la infertilità primaria, che riguarda le donne che non sono mai state in grado di concepire, e quella secondaria, che riguarda invece le donne che hanno concepito ma non sono riuscite a portare a termine la gravidanza per motivi diversi: aborti spontanei, malformazioni fetali, morte del feto in utero."
-      },
-      {
-        type: "p",
-        text: "Al di là di queste situazioni, ben note alla medicina, ne esiste un'altra che chiamo «pre-primaria»: consiste nell'impossibilità per certe donne di «provare» a procreare. Si tratta di una situazione conosciuta sia dal medico che dall'analista, che riesce a riconoscerla attraverso i discorsi fatti in seduta da donne che ne parlano mentre la vivono, ma soprattutto che se ne dolgono quando la possibilità di diventare madri si è definitivamente conclusa."
-      },
-      {
-        type: "h2",
-        text: "Chi sono le donne con infertilità pre-primaria"
-      },
-      {
-        type: "p",
-        text: "Nella maggior parte dei casi, la caratteristica che accomuna queste donne è l'avvicinarsi all'età della menopausa senza essersi mai concessa la possibilità di provare a concepire. Molte arrivano a questo appuntamento in ottimo stato di salute, impegnate in attività coinvolgenti e gratificanti, sulle quali hanno puntato tutte le loro energie. Il tentativo di realizzare se stesse può aver fatto passare in secondo piano — o almeno rinviare — non solo il desiderio di diventare madri, ma anche la ricerca di un compagno con cui costruire una famiglia."
-      },
-      {
-        type: "p",
-        text: "I motivi per cui non hanno mai tentato di restare incinte sono molteplici: la relazione con un uomo sposato che non intendeva lasciare la sua famiglia, una vita sessuale molto scarsa o inesistente, l'incapacità di stabilire una relazione seria e duratura, la paura di affrontare la vita da ragazza-madre, o un interesse così intenso per la propria crescita personale e professionale da indurle a rimandare oltre il limite biologico."
+        text: "Da alcuni anni la figura paterna è cambiata. Quella distaccata e autoritaria che ha contraddistinto la società patriarcale è stata sostituita da un'immagine diversa, presente fin dal processo gravidico, che ha cessato di essere una «questione di donne» per riguardare fin dall'inizio la coppia che si appresta a diventare famiglia. Tuttavia, malgrado il maggiore coinvolgimento dell'uomo, scarsa attenzione viene prestata alle problematiche psicologiche che vive il futuro padre durante la gravidanza e dopo la nascita del bambino."
       },
       {
         type: "highlight",
-        text: "Sembra quasi che certe donne, senza rendersene conto, si mettano ripetitivamente in situazioni che impediscono loro di saggiare la propria capacità procreativa, come se le circostanze esterne costituissero una difesa da un'inconscia «angoscia di fallimento»."
+        text: "Secondo un antico proverbio cinese: «la madre porta il figlio in grembo, il padre li porta entrambi nel cuore»."
+      },
+      {
+        type: "p",
+        text: "Questo sta a significare che si attribuisce al padre la capacità di contenimento, sostegno e supporto della diade madre/embrione/feto/bambino. Ci si aspetta che l'uomo comprenda e risponda alle richieste della donna incinta assumendo un comportamento protettivo e partecipe, ma di solito non ci si preoccupa che debba essere anche lui in grado di gestire le sensazioni che l'attesa e la nascita di un figlio suscitano nel suo intimo."
       },
       {
         type: "h2",
-        text: "Le radici psicologiche profonde"
+        text: "La riattivazione dei vissuti infantili"
       },
       {
         type: "p",
-        text: "Attraverso l'elaborazione associativa che avviene durante una micropsicoanalisi è possibile individuare le cause profonde di questa condizione. Il principale elemento comune che si evidenzia in tante storie diverse è la particolare intensità con cui è stata vissuta la situazione edipica — sia quando gli aspetti di amore per il padre e ostilità verso la madre arrivano fino alla coscienza, sia quando invece sono rimossi e dunque sconosciuti ma non privi della loro carica energetica."
+        text: "Anche nell'uomo che diventa genitore si riattivano — ossia vengono a galla, spesso in modo poco chiaro — desideri, vissuti e paure che riguardano la sua prima infanzia, a partire dal rapporto intrauterino con la propria madre. Questo significa che anche l'uomo si trova a doversi confrontare con i personaggi della propria storia, coi suoi aspetti gratificanti e con quelli rimasti insoddisfatti, che lo portano, come la donna, a vivere trasformazioni profonde più o meno evidenti."
       },
       {
         type: "p",
-        text: "Parlare di Edipo significa anche parlare di castrazione: una realtà con cui la donna deve confrontarsi e imparare ad accettare. Solo a queste condizioni le sarà possibile ricevere un figlio per sentirsi completa. La rivalità con la madre, quando è troppo intensa e non elaborata, diventa un ostacolo inconscio alla realizzazione del desiderio di maternità."
+        text: "Mentre in lei i cambiamenti psicologici vanno di pari passo con quelli fisici, in lui non hanno un supporto altrettanto chiaro e identificabile. Per l'uomo è difficile investire emotivamente una situazione sconosciuta che all'inizio non viene neanche percepita, fino a quando i cambiamenti fisici della donna, le immagini ecografiche, i movimenti del bambino non la rendono reale."
       },
       {
         type: "h2",
-        text: "Il caso clinico di Alessia"
+        text: "Le reazioni durante l'attesa"
       },
       {
         type: "p",
-        text: "Come psicoanalista mi è capitato di lavorare con Alessia, che alle soglie della menopausa inizia un'analisi a causa di intensi e incontrollabili attacchi di panico. Nella sua vita c'è un'infanzia difficile accanto a un padre cieco e a una madre invalida, che accudisce fin dall'età di sei anni: una situazione di ruoli invertiti che le preclude l'adolescenza normale e la proietta precocemente nel ruolo di caregiver."
-      },
-      {
-        type: "p",
-        text: "A 28 anni si sposa, desiderosa di avere un bambino per poter vivere attraverso di lui un'infanzia serena che le era mancata. Solo dopo il matrimonio scopre che il marito è totalmente impotente e contrario a qualsiasi cura. Per più di dieci anni la vita con un amante sposato — sostituto privilegiato del padre — alimenta la speranza di una maternità che non arriverà mai. Con l'avvicinarsi della menopausa, la frustrazione e l'aggressività inconscia verso la madre si scaricano su se stessa, manifestandosi come attacchi di panico che le impediscono di lavorare all'asilo dove si sente «seconda mamma» dei bambini."
-      },
-      {
-        type: "h2",
-        text: "Il debito di vita e la madre pre-edipica"
-      },
-      {
-        type: "p",
-        text: "L'importanza del rapporto della donna con la propria madre è sottolineata dalla psicanalista Monique Bydlowski, che ha lavorato per oltre trent'anni in un reparto di ostetricia. Secondo il suo parere non si può diventare madri se non si adempie al «debito di vita» — la gratitudine verso la madre che, avendo dato la vita alla figlia, le permette di trasmetterla a un altro essere. Si tratta di recuperare la madre pre-edipica, ossia la madre «primo oggetto d'amore», per potersi identificare con lei e diventare madre a propria volta."
-      },
-      {
-        type: "p",
-        text: "Questa tesi si integra con la prospettiva micropsicanalitica: la gravidanza riattiva i vissuti intra-uterini iscritti nell'inconscio della donna, inclusa la fisiologica aggressività che madre ed embrione/feto vivono fin dal momento del concepimento a causa della loro incompatibilità cellulare. La donna che passa dall'essere contenuto a contenitore rivive verso l'embrione/feto i desideri che aveva provato per la propria madre."
+        text: "A questo punto le reazioni possono essere disparate: dalla repulsione e dalla paura all'attrazione per il corpo femminile che si modifica, dall'interesse per il bambino alle sensazioni di rivalità, dal senso di responsabilità alla fuga."
       },
       {
         type: "highlight",
-        text: "Le cause dell'infertilità pre-primaria non sono diverse da quelle dell'infertilità primaria: in entrambe le condizioni il ruolo di primo piano è costituito dalla particolare intensità del polo incestuoso dell'Edipo e dai conseguenti sensi di colpa che impediscono la realizzazione del desiderio di avere un bambino."
+        text: "Qualunque siano le reazioni che la gravidanza suscita nel futuro padre, è importante che le sappia riconoscere, esprimere e rielaborare, in modo che non alimentino la depressione post partum — che non riguarda solo le mamme ma anche i papà, anche se la loro tende ancora a non venire riconosciuta o a essere occultata."
       }
     ]
   }

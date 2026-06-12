@@ -3,6 +3,17 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { teamMembers } from "../data/team";
 
+// Group by category, alphabetically sorted within each group and by category name
+const groupedTeam = Object.entries(
+  [...teamMembers]
+    .sort((a, b) => a.name.localeCompare(b.name, "it"))
+    .reduce((acc, m) => {
+      const cat = m.category || "Altro";
+      (acc[cat] = acc[cat] || []).push(m);
+      return acc;
+    }, {})
+).sort(([a], [b]) => a.localeCompare(b, "it"));
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [teamOpen, setTeamOpen] = useState(false);
@@ -33,16 +44,21 @@ export default function Navbar() {
                 <Link href="/team" className="navbar-dropdown-all">
                   Tutto il team
                 </Link>
-                <div className="navbar-dropdown-divider" />
-                {teamMembers.map((m) => (
-                  <Link
-                    key={m.slug}
-                    href={`/team/${m.slug}`}
-                    className="navbar-dropdown-item"
-                  >
-                    <span className="navbar-dropdown-name">{m.name}</span>
-                    <span className="navbar-dropdown-role">{m.role}</span>
-                  </Link>
+                {groupedTeam.map(([category, members]) => (
+                  <div key={category}>
+                    <div className="navbar-dropdown-divider" />
+                    <div className="navbar-dropdown-category">{category}</div>
+                    {members.map((m) => (
+                      <Link
+                        key={m.slug}
+                        href={`/team/${m.slug}`}
+                        className="navbar-dropdown-item"
+                      >
+                        <span className="navbar-dropdown-name">{m.name}</span>
+                        <span className="navbar-dropdown-role">{m.role}</span>
+                      </Link>
+                    ))}
+                  </div>
                 ))}
               </div>
             </div>
@@ -83,14 +99,19 @@ export default function Navbar() {
             <Link href="/team" onClick={() => { setOpen(false); setTeamOpen(false); }}>
               Tutto il team
             </Link>
-            {teamMembers.map((m) => (
-              <Link
-                key={m.slug}
-                href={`/team/${m.slug}`}
-                onClick={() => { setOpen(false); setTeamOpen(false); }}
-              >
-                {m.name}
-              </Link>
+            {groupedTeam.map(([category, members]) => (
+              <div key={category}>
+                <div className="mobile-menu-submenu-category">{category}</div>
+                {members.map((m) => (
+                  <Link
+                    key={m.slug}
+                    href={`/team/${m.slug}`}
+                    onClick={() => { setOpen(false); setTeamOpen(false); }}
+                  >
+                    {m.name}
+                  </Link>
+                ))}
+              </div>
             ))}
           </div>
         )}

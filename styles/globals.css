@@ -201,6 +201,23 @@ p { line-height: 1.7; }
   font-size: 0.74rem;
   color: var(--text-light);
 }
+.navbar-dropdown-category {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--green);
+  padding: 6px 14px 2px;
+}
+.mobile-menu-submenu-category {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--green);
+  padding: 10px 0 2px;
+  opacity: 0.8;
+}
 
 /* Mobile submenu */
 .mobile-menu-team-toggle {

@@ -45,10 +45,29 @@ function renderBlock(block, i) {
 export default function BlogPost({ post, related }) {
   if (!post) return null;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "author": {
+      "@type": "Person",
+      "name": post.author,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Portale Maternità",
+    },
+    ...(post.date && { "datePublished": post.date }),
+  };
+
   return (
     <Layout
       title={post.title}
       description={post.excerpt}
+      keywords={post.keywords}
+      canonicalPath={`/blog/${post.slug}`}
+      jsonLd={jsonLd}
     >
       <div className="article-wrapper">
         <div className="container">
