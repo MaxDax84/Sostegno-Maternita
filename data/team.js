@@ -35,7 +35,7 @@ export const teamMembers = [
   {
     id: 1,
     slug: "chiara-mauri",
-    name: "Chiara Mauri",
+    name: "Dott.ssa Chiara Mauri",
     role: "Educatrice per la Prima Infanzia",
     category: "Prima Infanzia",
     city: "Como",
