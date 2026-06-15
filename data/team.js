@@ -1,5 +1,30 @@
 export const teamMembers = [
   {
+    id: 2,
+    slug: "simona-bensi",
+    name: "Dott.ssa Simona Bensi",
+    role: "Psicologa",
+    category: "Psicologia Perinatale",
+    city: "—",
+    photo: null,
+    avatar: "SB",
+    color: "#A67B8A",
+    bgColor: "#7D5265",
+    bio: "Psicologa specializzata nella tutela della salute psicologica in gravidanza, nel post-partum e nel percorso di crescita dei bambini. Con una solida esperienza nel supporto socio-educativo e genitoriale, si dedica a promuovere il benessere della nuova famiglia, con un focus specifico sui delicati «Primi Mille Giorni» di vita. Ha sviluppato una competenza specialistica nel sostegno al lutto perinatale, offrendo un modello di accompagnamento salutogenico e trauma-orientato.",
+    specialties: [
+      "Supporto psicologico in gravidanza e post-partum",
+      "Crescita e sviluppo del bambino",
+      "Supporto socio-educativo e genitoriale",
+      "Lutto perinatale",
+    ],
+    modes: ["Da definire"],
+    experience: "—",
+    education: [
+      "Corso «I Primi Mille Giorni di Vita», Università di Firenze",
+      "Formazione specialistica in accompagnamento al lutto perinatale, CiaoLapo",
+    ],
+  },
+  {
     id: 0,
     slug: "marcella-marcone",
     name: "Dott.ssa Marcella Marcone",
