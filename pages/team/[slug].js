@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Layout from "../../components/Layout";
+import EmailReveal from "../../components/EmailReveal";
 import { teamMembers } from "../../data/team";
 import { posts } from "../../data/posts";
 
@@ -93,9 +94,7 @@ export default function TeamMember({ member, memberPosts }) {
                 </div>
               )}
 
-              <a href="mailto:mmarcone@me.com" className="btn btn-primary member-cta-btn">
-                Prenota una consulenza
-              </a>
+              <EmailReveal email={member.contact} btnClass="btn btn-primary member-cta-btn" />
             </aside>
 
             {/* Main content */}
@@ -155,9 +154,7 @@ export default function TeamMember({ member, memberPosts }) {
             valutare insieme il percorso più adatto a te.
           </p>
           <div className="cta-actions">
-            <a href="mailto:mmarcone@me.com" className="btn btn-white">
-              Scrivici
-            </a>
+            <EmailReveal email={member.contact} btnClass="btn btn-white" />
             <Link href="/team" className="btn btn-white-outline">
               Vedi tutto il team
             </Link>

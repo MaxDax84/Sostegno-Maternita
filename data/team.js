@@ -44,6 +44,7 @@ export const teamMembers = [
       "Depressione post-partum",
       "Psicologia della Perinatalità",
     ],
+    contact: "mmarcone@me.com",
     modes: ["In presenza – Milano", "Online"],
     experience: "Oltre 30 anni di esperienza",
     education: [
@@ -76,7 +77,7 @@ export const teamMembers = [
       "Laboratori con materiali naturali",
       "Outdoor education",
     ],
-    modes: ["In presenza – Como e provincia"],
+    modes: ["In presenza – Como e provincia", "Online"],
     experience: "Oltre 4 anni di esperienza",
     education: [
       "Corso di Perfezionamento «I primi mille giorni», Università degli Studi di Firenze (2024 – in corso)",
