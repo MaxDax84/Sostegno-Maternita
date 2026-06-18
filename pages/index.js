@@ -27,12 +27,12 @@ export default function Home() {
           <div className="hero-content">
             <span className="hero-tag">Professioniste della Maternità</span>
             <h1 className="hero-title">
-              Sostegno alla Genitorialità
+              Sostegno alla Maternità
             </h1>
             <p className="hero-subtitle">Fisiologica e Patologica</p>
             <p className="hero-desc">
-              Un team di professioniste di diversa formazione accomunate
-              dall'interesse e dalla competenza per la genitorialità in tutte le sue
+              Un team di professionisti e professioniste di diversa formazione accomunate
+              dall'interesse e dalla competenza per la maternità in tutte le sue
               forme. Al tuo fianco, in ogni momento del percorso.
             </p>
             <div className="hero-actions">
