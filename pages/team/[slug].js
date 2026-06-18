@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import EmailReveal from "../../components/EmailReveal";
+import WhatsAppReveal from "../../components/WhatsAppReveal";
 import { teamMembers } from "../../data/team";
 import { posts } from "../../data/posts";
 
@@ -95,6 +96,7 @@ export default function TeamMember({ member, memberPosts }) {
               )}
 
               <EmailReveal email={member.contact} btnClass="btn btn-primary member-cta-btn" />
+              <WhatsAppReveal number={member.whatsapp} btnClass="btn btn-whatsapp member-cta-btn" />
             </aside>
 
             {/* Main content */}
@@ -155,6 +157,7 @@ export default function TeamMember({ member, memberPosts }) {
           </p>
           <div className="cta-actions">
             <EmailReveal email={member.contact} btnClass="btn btn-white" />
+            <WhatsAppReveal number={member.whatsapp} btnClass="btn btn-white" />
             <Link href="/team" className="btn btn-white-outline">
               Vedi tutto il team
             </Link>

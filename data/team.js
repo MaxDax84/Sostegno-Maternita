@@ -45,6 +45,7 @@ export const teamMembers = [
       "Psicologia della Perinatalità",
     ],
     contact: "mmarcone@me.com",
+    whatsapp: "393391623423",
     modes: ["In presenza – Milano", "Online"],
     experience: "Oltre 30 anni di esperienza",
     education: [

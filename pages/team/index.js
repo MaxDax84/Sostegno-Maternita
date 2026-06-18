@@ -57,7 +57,10 @@ export default function Team() {
                     <div className="team-name">{member.name}</div>
                     <div className="team-role">{member.role}</div>
                     <div className="team-city">
-                      📍 {member.city} · {member.experience}
+                      📍{" "}
+                      <span className="team-city-short">{member.city}</span>
+                      <span className="team-city-full">{member.address || member.city}</span>
+                      {" "}· {member.experience}
                     </div>
                     <p className="team-bio">{member.bio}</p>
                     <div className="team-tags">
