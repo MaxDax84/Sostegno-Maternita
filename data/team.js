@@ -39,7 +39,7 @@ export const teamMembers = [
     bgColor: "#2D5A82",
     bio: "Psicologa e Psicoterapeuta specializzata in Psicologia della Perinatalità. Con oltre trent'anni di esperienza, accompagna le donne e le coppie nel delicato percorso della gravidanza, del parto e del post-partum, offrendo supporto psicologico sia in presenza (Milano) che online.",
     specialties: [
-      "Supporto psicologico in gravidanza",
+      "Supporto psicologico in gravidanza e dopo l'aborto",
       "Infertilità e percorsi PMA",
       "Problematiche del puerperio",
       "Psicologia e Psicopatologia della Perinatalità",
