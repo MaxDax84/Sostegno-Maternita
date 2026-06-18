@@ -49,9 +49,9 @@ export const teamMembers = [
     modes: ["In presenza – Milano", "Online"],
     experience: "Oltre 30 anni di esperienza",
     education: [
+      "Docente di perinatalità presso il corso di psicanalisi dell'Università di Mosca dal 2023",
       "Corso di perfezionamento «I primi mille giorni di vita», Università di Firenze (2025)",
       "Specializzazione in Micropsicoanalisi, Società Internazionale di Micropsicoanalisi, Svizzera (1987)",
-      "Laurea in Filosofia, Università degli Studi di Torino (1976)",
       "Iscritta all'Albo degli Psicologi della Lombardia – abilitata alla Psicoterapia dal 1989",
     ],
     publications: [
