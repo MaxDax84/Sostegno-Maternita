@@ -41,8 +41,8 @@ export const teamMembers = [
     specialties: [
       "Supporto psicologico in gravidanza",
       "Infertilità e percorsi PMA",
-      "Depressione post-partum",
-      "Psicologia della Perinatalità",
+      "Problematiche del puerperio",
+      "Psicologia e Psicopatologia della Perinatalità",
     ],
     contact: "mmarcone@me.com",
     whatsapp: "393391623423",
