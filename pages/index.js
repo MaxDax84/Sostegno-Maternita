@@ -32,7 +32,7 @@ export default function Home() {
             <p className="hero-subtitle">Fisiologica e Patologica</p>
             <p className="hero-desc">
               Un team di professioniste di diversa formazione accomunate
-              dall'interesse e dalla competenza per la maternità in tutte le sue
+              dall'interesse e dalla competenza per la genitorialità in tutte le sue
               forme. Al tuo fianco, in ogni momento del percorso.
             </p>
             <div className="hero-actions">

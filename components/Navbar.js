@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { teamMembers } from "../data/team";
@@ -18,6 +18,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [teamOpen, setTeamOpen] = useState(false);
   const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = () => { setOpen(false); setTeamOpen(false); };
+    router.events.on("routeChangeStart", handleRouteChange);
+    return () => router.events.off("routeChangeStart", handleRouteChange);
+  }, [router.events]);
 
   return (
     <>
@@ -73,9 +79,10 @@ export default function Navbar() {
           </div>
 
           <button
-            className="navbar-hamburger"
+            className={`navbar-hamburger${open ? " is-open" : ""}`}
             onClick={() => setOpen(!open)}
-            aria-label="Apri menu"
+            aria-label={open ? "Chiudi menu" : "Apri menu"}
+            aria-expanded={open}
           >
             <span />
             <span />
@@ -83,6 +90,9 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
+
+      {/* Backdrop */}
+      {open && <div className="mobile-menu-backdrop" onClick={() => setOpen(false)} />}
 
       {/* Mobile menu */}
       <div className={`mobile-menu${open ? " open" : ""}`}>
