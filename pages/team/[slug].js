@@ -97,6 +97,16 @@ export default function TeamMember({ member, memberPosts }) {
 
               <EmailReveal email={member.contact} btnClass="btn btn-primary member-cta-btn" />
               <WhatsAppReveal number={member.whatsapp} btnClass="btn btn-whatsapp member-cta-btn" />
+              {member.instagram && (
+                <a
+                  href={`https://instagram.com/${member.instagram}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-instagram member-cta-btn"
+                >
+                  📷 @{member.instagram}
+                </a>
+              )}
             </aside>
 
             {/* Main content */}

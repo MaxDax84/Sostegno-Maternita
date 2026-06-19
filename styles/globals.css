@@ -85,6 +85,8 @@ p { line-height: 1.7; }
 .btn-white-outline:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
 .btn-whatsapp { background: #25D366; color: var(--white); border-color: #25D366; }
 .btn-whatsapp:hover { background: #1ebe5d; border-color: #1ebe5d; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.35); }
+.btn-instagram { background: #E1306C; color: var(--white); border-color: #E1306C; }
+.btn-instagram:hover { background: #c0255a; border-color: #c0255a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(225,48,108,0.35); }
 
 /* ── NAVBAR ────────────────────────────────────────────── */
 .navbar {
