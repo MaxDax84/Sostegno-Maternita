@@ -2,7 +2,8 @@ import Link from "next/link";
 import Layout from "../../components/Layout";
 import { teamMembers } from "../../data/team";
 
-const sortedTeam = [...teamMembers].sort((a, b) => a.name.localeCompare(b.name, "it"));
+const lastName = (m) => m.name.split(" ").pop();
+const sortedTeam = [...teamMembers].sort((a, b) => lastName(a).localeCompare(lastName(b), "it"));
 
 export default function Team() {
   return (

@@ -4,9 +4,10 @@ import { useRouter } from "next/router";
 import { teamMembers } from "../data/team";
 
 // Group by category, alphabetically sorted within each group and by category name
+const lastName = (m) => m.name.split(" ").pop();
 const groupedTeam = Object.entries(
   [...teamMembers]
-    .sort((a, b) => a.name.localeCompare(b.name, "it"))
+    .sort((a, b) => lastName(a).localeCompare(lastName(b), "it"))
     .reduce((acc, m) => {
       const cat = m.category || "Altro";
       (acc[cat] = acc[cat] || []).push(m);
