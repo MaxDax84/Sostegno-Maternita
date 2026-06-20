@@ -13,10 +13,10 @@ export const teamMembers = [
     bgColor: "#4E6340",
     bio: "Medico Chirurgo e Omeopata con oltre 10 anni di esperienza nell'ambito della Medicina integrata. Attraverso un metodo che intreccia Medicina classica e Medicina naturale e che pone al centro la persona, accompagna i pazienti in percorsi personalizzati di prevenzione e cura, aiutandoli a trovare equilibrio, salute e benessere a 360°. La medicina omeopatica è un approccio dolce, naturale e sicuro, ideale per l'età pediatrica e per il sostegno e la cura della donna in gravidanza e nella delicata fase del post-parto. Svolge inoltre attività di divulgazione medico-scientifica in presenza e online (seminari, workshop, e-Book, webinar).",
     specialties: [
-      "Benessere gastrointestinale",
+      "Omeopatia in gravidanza e nella prima infanzia",
+      "Benessere gastrointestinale / disbiosi",
+      "Difese immunitarie",
       "Asse intestino-cervello",
-      "Disbiosi",
-      "Rinforzo difese immunitarie",
     ],
     modes: ["In presenza – Milano", "Online"],
     experience: "Oltre 10 anni di esperienza",
