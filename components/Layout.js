@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import CookieBanner from "./CookieBanner";
 
 const SITE_URL = process.env.SITE_URL || "";
 
@@ -40,6 +41,7 @@ export default function Layout({ children, title, description, keywords, canonic
       <Navbar />
       <main>{children}</main>
       <Footer />
+      <CookieBanner />
     </>
   );
 }

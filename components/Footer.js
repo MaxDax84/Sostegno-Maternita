@@ -37,6 +37,11 @@ export default function Footer() {
         <div className="footer-bottom">
           <span>© {year} Portale Maternità. Tutti i diritti riservati.</span>
           <span>I contenuti del sito sono a scopo informativo e non sostituiscono il parere medico.</span>
+          <span className="footer-legal-links">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            {" · "}
+            <Link href="/cookie-policy">Cookie Policy</Link>
+          </span>
         </div>
       </div>
     </footer>
