@@ -42,12 +42,12 @@ export default function Footer() {
             {" · "}
             <Link href="/cookie-policy">Cookie Policy</Link>
           </span>
-          <span className="footer-credits">
-            Sito realizzato da{" "}
-            <a href="https://www.massimodassano.it" target="_blank" rel="noopener noreferrer">
-              Massimo Dassano
-            </a>
-          </span>
+        </div>
+        <div className="footer-credits">
+          Sito realizzato da{" "}
+          <a href="https://www.massimodassano.it" target="_blank" rel="noopener noreferrer">
+            Massimo Dassano
+          </a>
         </div>
       </div>
     </footer>

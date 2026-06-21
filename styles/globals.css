@@ -1101,6 +1101,6 @@ p { line-height: 1.7; }
 .legal-table code { background: var(--cream-dark); padding: 2px 6px; border-radius: 4px; font-size: 0.82rem; }
 .footer-legal-links a { color: rgba(255,255,255,0.5); text-decoration: underline; text-underline-offset: 2px; }
 .footer-legal-links a:hover { color: rgba(255,255,255,0.8); }
-.footer-credits { font-size: 0.78rem; color: rgba(255,255,255,0.4); }
+.footer-credits { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-align: center; padding: 10px 0 4px; }
 .footer-credits a { color: rgba(255,255,255,0.5); text-decoration: underline; text-underline-offset: 2px; }
 .footer-credits a:hover { color: rgba(255,255,255,0.8); }
