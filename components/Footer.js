@@ -25,12 +25,14 @@ export default function Footer() {
             <Link href="/blog">Blog</Link>
           </div>
 
-<div className="footer-col">
+          <div className="footer-col">
             <h4>Contatti</h4>
-            <Link href="mailto:mmarcone@me.com">mmarcone@me.com</Link>
-            <span style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.4)", marginTop: 8 }}>
-              Lavoriamo in tutta Italia, in presenza e online.
+            <span style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.6 }}>
+              Ogni professionista ha un recapito dedicato.
             </span>
+            <Link href="/team" style={{ fontSize: "0.82rem", fontWeight: 600, color: "rgba(255,255,255,0.75)", marginTop: 10 }}>
+              Scopri il team →
+            </Link>
           </div>
         </div>
 
