@@ -29,7 +29,6 @@ export default function PrivacyPolicy() {
           <p>
             <strong>Dott.ssa Marcella Marcone</strong><br />
             Via Sansovino 3 – Milano<br />
-            P.IVA: [P.IVA]<br />
             Email: <a href="mailto:mmarcone@me.com">mmarcone@me.com</a>
           </p>
 
