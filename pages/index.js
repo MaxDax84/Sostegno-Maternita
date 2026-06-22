@@ -145,8 +145,8 @@ export default function Home() {
               <div className="feature-icon">🌿</div>
               <div className="feature-title">Approccio integrato</div>
               <p className="feature-desc">
-                Psicologia, ostetricia, fisioterapia, allattamento e
-                nutrizione: professioniste diverse che lavorano in
+                Psicologia, ostetricia, fisioterapia, allattamento,
+                nutrizione, medicina integrata: professioniste diverse che lavorano in
                 sinergia per te.
               </p>
             </div>
