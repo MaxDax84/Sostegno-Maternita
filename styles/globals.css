@@ -494,8 +494,6 @@ p { line-height: 1.7; }
   line-height: 1.75;
 }
 .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-.cta-primary-wrap { display: flex; flex-direction: column; align-items: center; gap: 14px; }
-.cta-strip .cta-note { font-size: 0.72rem; font-weight: 600; color: rgba(255,255,255,0.85); margin: 0; letter-spacing: 0.01em; text-align: center; }
 
 /* ── PAGE HEADER ───────────────────────────────────────── */
 .page-header {

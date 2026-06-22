@@ -163,14 +163,9 @@ export default function Home() {
             c'è una professionista pronta ad ascoltarti.
           </p>
           <div className="cta-actions">
-            <div className="cta-primary-wrap">
-              <Link href="/team" className="btn btn-white">
-                Contatta la tua professionista*
-              </Link>
-              <p className="cta-note">
-                *Ogni professionista è contattabile direttamente tramite i recapiti presenti nel suo profilo personale.
-              </p>
-            </div>
+            <Link href="/team" className="btn btn-white">
+              Trova la tua professionista
+            </Link>
             <Link href="/blog" className="btn btn-white-outline">
               Leggi i nostri articoli
             </Link>
