@@ -161,22 +161,6 @@ export default function TeamMember({ member, memberPosts }) {
         </div>
       </div>
 
-      <section className="section cta-strip">
-        <div className="container">
-          <h2>Vuoi prenotare una consulenza?</h2>
-          <p>
-            Contattaci e ti metteremo in contatto con {member.name.split(" ")[1]} per
-            valutare insieme il percorso più adatto a te.
-          </p>
-          <div className="cta-actions">
-            <EmailReveal email={member.contact} btnClass="btn btn-white" />
-            <WhatsAppReveal number={member.whatsapp} btnClass="btn btn-white" />
-            <Link href="/team" className="btn btn-white-outline">
-              Vedi tutto il team
-            </Link>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 }
