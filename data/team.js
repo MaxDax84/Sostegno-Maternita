@@ -44,10 +44,9 @@ export const teamMembers = [
     bgColor: "#7D5040",
     bio: "Ostetrica libero professionista con oltre 20 anni di esperienza nel pavimento pelvico e nella riabilitazione perineale. Specializzata a Montpellier nel 2004, si occupa di disfunzioni uro-ginecologiche, recupero post-partum e sintomatologia dolorosa pelvica. Svolge supporto domiciliare post-partum con particolare attenzione all'allattamento e conduce incontri di accompagnamento alla nascita e di massaggio neonatale. Il suo approccio integra evidenze scientifiche e personalizzazione del percorso di cura.",
     specialties: [
+      "Supporto domiciliare per recupero post-partum e allattamento",
+      "Incontri di accompagnamento alla nascita e massaggio neonatale",
       "Pavimento pelvico e riabilitazione perineale",
-      "Recupero post-partum",
-      "Sintomatologia dolorosa pelvica",
-      "Supporto domiciliare e allattamento",
     ],
     modes: ["In presenza – Milano", "Domicilio – Milano"],
     experience: "Oltre 20 anni di esperienza",
