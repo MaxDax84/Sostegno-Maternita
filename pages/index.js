@@ -171,8 +171,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="cta-note">
-            * Ogni professionista è contattabile direttamente tramite i recapiti
-            presenti nel suo profilo personale.
+            *Ogni professionista è contattabile direttamente tramite i recapiti presenti nel suo profilo personale.
           </p>
         </div>
       </section>
