@@ -170,6 +170,10 @@ export default function Home() {
               Leggi i nostri articoli
             </Link>
           </div>
+          <p className="cta-note">
+            * Ogni professionista è contattabile direttamente tramite i recapiti
+            presenti nel suo profilo personale.
+          </p>
         </div>
       </section>
     </Layout>
