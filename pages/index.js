@@ -164,7 +164,7 @@ export default function Home() {
           </p>
           <div className="cta-actions">
             <Link href="/team" className="btn btn-white">
-              Trova la tua professionista
+              Contatta la tua professionista*
             </Link>
             <Link href="/blog" className="btn btn-white-outline">
               Leggi i nostri articoli
