@@ -81,20 +81,6 @@ export default function Team() {
         </div>
       </section>
 
-      <section className="section cta-strip">
-        <div className="container">
-          <h2>Hai bisogno di supporto?</h2>
-          <p>
-            Scrivici e ti aiuteremo a trovare la professionista più adatta
-            alla tua situazione e alle tue esigenze.
-          </p>
-          <div className="cta-actions">
-            <a href="mailto:mmarcone@me.com" className="btn btn-white">
-              Contattaci
-            </a>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 }
