@@ -152,6 +152,7 @@ export const teamMembers = [
     ],
     contact: "mmarcone@me.com",
     whatsapp: "393391623423",
+    website: "https://www.marcellamarcone.it",
     modes: ["In presenza – Milano", "Online"],
     experience: "Oltre 30 anni di esperienza",
     education: [
