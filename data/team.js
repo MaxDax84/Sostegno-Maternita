@@ -102,6 +102,7 @@ export const teamMembers = [
       "Riequilibrio per la fertilità e supporto PMA",
       "Mamma atleta e ginnastica posturale",
     ],
+    website: "https://www.olisticstudio.com/",
     modes: ["In presenza – Milano", "Online (videochiamata)"],
     experience: "Oltre 30 anni di esperienza",
     education: [
