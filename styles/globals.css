@@ -250,12 +250,12 @@ p { line-height: 1.7; }
   border-bottom: 1px solid var(--border);
 }
 .mobile-menu-submenu a {
+  display: block;
   font-size: 0.9rem;
   color: var(--text-mid);
-  padding: 10px 0;
+  padding: 11px 0;
   border-bottom: 1px solid var(--border);
 }
-.mobile-menu-submenu a:last-child { border-bottom: none; }
 
 .mobile-menu-backdrop {
   position: fixed;
