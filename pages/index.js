@@ -77,7 +77,7 @@ export default function Home() {
               </p>
             </div>
             <Link href="/team" className="btn btn-primary" style={{ marginTop: 8 }}>
-              Conosci le professioniste →
+              Conosci i professionisti →
             </Link>
           </div>
         </div>
