@@ -105,6 +105,9 @@ export const teamMembers = [
       "Mamma atleta e ginnastica posturale",
     ],
     website: "https://www.olisticstudio.com/",
+    instagram: "paolotorririflessologo",
+    facebook: "https://www.facebook.com/paolo.torri.100/",
+    youtube: "https://www.youtube.com/@paolotorrimaestroriflessol4385",
     modes: ["In presenza – Milano", "Online (videochiamata)"],
     experience: "Oltre 30 anni di esperienza",
     education: [
@@ -134,6 +137,8 @@ export const teamMembers = [
       "Famiglie e bambini con disabilità",
       "Lutto perinatale",
     ],
+    contact: "dottoressabensi.psico@gmail.com",
+    whatsapp: "393934802237",
     modes: ["In presenza – Piacenza", "Online"],
     experience: "Oltre 10 anni di esperienza",
     education: [
