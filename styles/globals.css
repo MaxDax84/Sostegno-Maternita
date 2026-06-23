@@ -154,7 +154,7 @@ p { line-height: 1.7; }
   top: calc(100% + 10px);
   left: 50%;
   transform: translateX(-50%);
-  min-width: 240px;
+  min-width: 280px;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -200,10 +200,12 @@ p { line-height: 1.7; }
   font-size: 0.86rem;
   font-weight: 500;
   color: var(--text);
+  white-space: nowrap;
 }
 .navbar-dropdown-role {
   font-size: 0.74rem;
   color: var(--text-light);
+  white-space: nowrap;
 }
 .navbar-dropdown-category {
   font-size: 0.68rem;

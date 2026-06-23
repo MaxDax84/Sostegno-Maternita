@@ -33,7 +33,7 @@ export const teamMembers = [
   {
     id: 4,
     slug: "fabiana-toneatto",
-    name: "Fabiana Toneatto",
+    name: "Dott.ssa Fabiana Toneatto",
     role: "Ostetrica libero professionista",
     category: "Ostetricia",
     city: "Milano",
@@ -60,7 +60,7 @@ export const teamMembers = [
   {
     id: 5,
     slug: "giuliana-pino",
-    name: "Giuliana Pino",
+    name: "Dott.ssa Giuliana Pino",
     role: "Ostetrica",
     category: "Ostetricia",
     city: "Milano",
@@ -86,7 +86,7 @@ export const teamMembers = [
   {
     id: 6,
     slug: "paolo-torri",
-    name: "Paolo Torri",
+    name: "Dott. Paolo Torri",
     role: "Maestro Riflessologo",
     category: "Terapie Olistiche",
     city: "Milano",
