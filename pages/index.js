@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalOrganization",
-  "name": "Portale Maternità",
+  "name": "Sostegno Maternità",
   "url": process.env.SITE_URL,
   "description":
     "Team di professioniste specializzate in supporto psicologico perinatale: gravidanza, parto, depressione post-partum, infertilità, PMA, aborto, morte fetale, ambientamento asilo nido.",

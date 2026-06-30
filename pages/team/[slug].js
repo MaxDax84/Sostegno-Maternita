@@ -33,7 +33,7 @@ export default function TeamMember({ member, memberPosts }) {
         "name": member.name,
         "jobTitle": member.role,
         "description": member.bio,
-        "worksFor": { "@type": "Organization", "name": "Portale Maternità" },
+        "worksFor": { "@type": "Organization", "name": "Sostegno Maternità" },
       }}
     >
       <div className="page-header page-header-short">

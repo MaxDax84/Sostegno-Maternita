@@ -7,8 +7,8 @@ const SITE_URL = process.env.SITE_URL || "";
 
 export default function Layout({ children, title, description, keywords, canonicalPath, jsonLd }) {
   const siteTitle = title
-    ? `${title} | Portale Maternità`
-    : "Portale Maternità — Sostegno alla Maternità Fisiologica e Patologica";
+    ? `${title} | Sostegno Maternità`
+    : "Sostegno Maternità — Sostegno alla Maternità Fisiologica e Patologica";
 
   const siteDesc =
     description ||

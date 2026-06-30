@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <div className="footer-logo">
-              Portale Maternità
+              Sostegno Maternità
             </div>
             <p className="footer-desc">
               Un team di professioniste specializzate nel sostegno alla maternità
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© {year} Portale Maternità. Tutti i diritti riservati.</span>
+          <span>© {year} Sostegno Maternità. Tutti i diritti riservati.</span>
           <span>I contenuti del sito sono a scopo informativo e non sostituiscono il parere medico.</span>
           <span className="footer-legal-links">
             <Link href="/privacy-policy">Privacy Policy</Link>

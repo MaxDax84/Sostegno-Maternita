@@ -56,7 +56,7 @@ export default function BlogPost({ post, related }) {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Portale Maternità",
+      "name": "Sostegno Maternità",
     },
     ...(post.date && { "datePublished": post.date }),
   };

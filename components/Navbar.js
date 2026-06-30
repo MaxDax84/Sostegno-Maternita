@@ -31,7 +31,7 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="container navbar-inner">
           <Link href="/" className="navbar-logo">
-            Portale Maternità
+            Sostegno Maternità
           </Link>
 
           <div className="navbar-links">
