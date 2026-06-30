@@ -1,10 +1,10 @@
-# Portale Maternità — Project Summary
+# Sostegno Maternità — Project Summary
 
-> Ultimo aggiornamento: 2026-06-08
+> Ultimo aggiornamento: 2026-06-30
 
 ## Panoramica
 
-Sito web vetrina per un team multidisciplinare di professioniste specializzate nel sostegno alla maternità fisiologica e patologica. Il sito serve a:
+Sito web vetrina per un team multidisciplinare di professioniste/i specializzati nel sostegno alla maternità fisiologica e patologica. Il sito serve a:
 1. Presentare il team e le relative competenze
 2. Pubblicare contenuti informativi (blog) su tematiche legate alla maternità
 3. Posizionarsi sui motori di ricerca per query italiane legate a maternità, gravidanza, parto, PMA, aborto, morte fetale, depressione post-partum, ambientamento, asilo nido
@@ -15,55 +15,64 @@ Sito web vetrina per un team multidisciplinare di professioniste specializzate n
 |---|---|---|
 | Framework | Next.js 14 (Pages Router) | SSG/SSR nativo, ottimo SEO, integrazione Vercel |
 | Stile | CSS globale (globals.css) | Semplicità, nessuna dipendenza aggiuntiva |
-| Deploy | Vercel | Piano gratuito, integrazione nativa Next.js |
-| Repository | GitHub — `MaxDax84/Marcella-TemporarySite` | |
-| URL attuale | `https://marcella-temporarysite.vercel.app` | Temporaneo, dominio reale da acquistare |
+| Deploy | Vercel (progetto `sostegno-maternita`) | Piano gratuito, integrazione nativa Next.js |
+| Repository | GitHub — `MaxDax84/Sostegno-Maternita` | |
+| URL attuale | `https://portale-maternita.vercel.app` | Dominio temporaneo storico, ancora collegato come produzione in attesa di acquisto dominio personalizzato |
 
 ## Struttura del progetto
 
 ```
-Marcella-TemporarySite/
+Sostegno Maternità/
 ├── components/
 │   ├── Layout.js         # Head (SEO, JSON-LD), Navbar, Footer
-│   ├── Navbar.js         # Nav fissa, responsive con menu hamburger
-│   └── Footer.js         # Footer con colonne e disclaimer medico
+│   ├── Navbar.js         # Nav fissa, responsive con menu hamburger e dropdown team scrollabile
+│   ├── Footer.js         # Footer con colonne e disclaimer medico
+│   ├── CookieBanner.js   # Banner consenso cookie
+│   ├── EmailReveal.js    # Reveal email su click (anti-scraping)
+│   └── WhatsAppReveal.js # Reveal numero WhatsApp su click
 ├── data/
-│   ├── team.js           # Dati REALI delle professioniste
+│   ├── team.js           # Dati REALI delle professioniste/i
 │   └── posts.js          # Articoli del blog (contenuto completo + keywords SEO)
 ├── pages/
 │   ├── _app.js           # Fade tra pagine
 │   ├── index.js          # Homepage: Hero + Chi Siamo + Cosa Facciamo + CTA
-│   ├── blog.js           # Pagina Blog: griglia articoli
+│   ├── blog.js            # Pagina Blog: griglia articoli
 │   ├── sitemap.xml.js    # Sitemap dinamica (generata server-side)
+│   ├── privacy-policy.js
+│   ├── cookie-policy.js
 │   ├── blog/[slug].js    # Singolo articolo con sidebar + JSON-LD Article
 │   └── team/
-│       ├── index.js      # Pagina Team: griglia card professioniste
+│       ├── index.js      # Pagina Team: griglia card professioniste/i
 │       └── [slug].js     # Profilo singola professionista + JSON-LD Person
 ├── public/
 │   ├── robots.txt        # Consente indicizzazione, punta alla sitemap
-│   ├── marcella-marcone.jpg
-│   └── chiara-mauri.jpg
+│   └── *.jpg/.png/.jpeg  # Foto profilo team + sfondo farfalle
 ├── styles/
 │   └── globals.css       # Tutto il CSS: variabili, componenti, responsive
 └── PROJECT_SUMMARY.md    # Questo file
 ```
 
-## Team attuale (dati reali)
+## Team attuale
 
-| Nome | Ruolo | Città | Specialità chiave |
-|------|-------|-------|-------------------|
-| Dott.ssa Marcella Marcone | Psicologa e Psicoterapeuta | Milano | Gravidanza, parto, depressione post-partum, PMA, infertilità, psicologia perinatale |
-| Chiara Mauri | Educatrice per la Prima Infanzia | Como | Ambientamento asilo nido, educazione 0-36 mesi, outdoor education |
-
-Email contatto: `mmarcone@me.com`
+| Nome | Ruolo | Città |
+|------|-------|-------|
+| Dott.ssa Eleonora Papa | Medico Chirurgo e Omeopata | Milano |
+| Dott.ssa Fabiana Toneatto | Ostetrica libero professionista | Milano |
+| Dott.ssa Giuliana Pino | Ostetrica | Milano |
+| Dott. Paolo Torri | Maestro Riflessologo | Milano |
+| Dott.ssa Simona Bensi | Psicologa | Piacenza |
+| Dott.ssa Marcella Marcone | Psicologa e Psicoterapeuta | Milano |
+| Dott.ssa Claudia Belvedere | Psicologa | Firenze / Rende (CS) |
+| Federica Arcuri | Integrative Nutrition Health Coach / Integrative Fertility Coach | New York |
+| Dott.ssa Chiara Mauri | Educatrice per la Prima Infanzia | Como |
 
 ## Blog — articoli pubblicati
 
-| ID | Titolo | Autrice | Keyword target |
-|----|--------|---------|----------------|
-| 3 | Scegliere il servizio educativo per la prima infanzia | Chiara Mauri | asilo nido, ambientamento, educazione 0-3 |
-| 1 | È possibile programmare la gravidanza? | Marcella Marcone | gravidanza, fertilità, psicologia perinatale |
-| 2 | L'infertilità pre-primaria | Marcella Marcone | infertilità, PMA, aborto, morte fetale |
+| ID | Titolo | Autrice |
+|----|--------|---------|
+| 1 | È possibile programmare la gravidanza? | Marcella Marcone |
+| 2 | Alcuni aspetti psicologici della paternità | — |
+| 3 | Scegliere il servizio educativo per la prima infanzia | Chiara Mauri |
 
 ## SEO — stato attuale
 
@@ -80,24 +89,12 @@ Email contatto: `mmarcone@me.com`
 - `SITE_URL` centralizzato in `next.config.js` (facile da cambiare con nuovo dominio)
 
 ### Da fare
-- [ ] Comprare dominio personalizzato e aggiornare `SITE_URL` in `next.config.js`
-- [ ] Aggiornare URL in `public/robots.txt`
-- [ ] Configurare redirect 301 da `marcella-temporarysite.vercel.app` → nuovo dominio (da pannello Vercel)
+- [ ] Comprare dominio personalizzato e aggiornare `SITE_URL` in `next.config.js`, `public/robots.txt` e il dominio di produzione su Vercel (vedi nota sotto)
+- [ ] Configurare redirect 301 da `portale-maternita.vercel.app` → nuovo dominio (da pannello Vercel)
 - [ ] Iscrivere il sito a **Google Search Console** e inviare la sitemap
 - [ ] Aggiungere **Google Analytics** o Plausible per il tracking
 - [ ] Immagini Open Graph (og:image) per condivisioni social
 - [ ] Favicon reale
-- [ ] Nuovi articoli su: ciuccio, pannolino, regole, aborto, morte fetale (per coprire keyword mancanti)
-- [ ] Google My Business (per ricerche locali Milano/Como)
-- [ ] Link building e menzioni esterne
-
-## Keyword target
-
-### Già coperte da contenuto esistente
-`gravidanza` · `parto` · `depressione post partum` · `PMA` · `infertilità` · `psicologia perinatale` · `ambientamento` · `asilo nido` · `educazione prima infanzia`
-
-### Mancanti — servono articoli dedicati
-`ciuccio` · `pannolino` · `regole` · `aborto` · `morte fetale`
 
 ## Design
 
@@ -108,7 +105,8 @@ Email contatto: `mmarcone@me.com`
 
 ## Deploy
 
-1. Repository GitHub: `MaxDax84/Marcella-TemporarySite` (branch `master`)
-2. Collegato a Vercel — deploy automatico ad ogni push su `master`
-3. URL temporaneo: `https://marcella-temporarysite.vercel.app`
-4. Variabile d'ambiente da configurare su Vercel al cambio dominio: `SITE_URL=https://www.nuovodominio.it`
+1. Repository GitHub: `MaxDax84/Sostegno-Maternita` (branch `master`)
+2. Collegato a Vercel (progetto `sostegno-maternita`) — deploy automatico ad ogni push su `master`
+3. URL produzione attuale: `https://portale-maternita.vercel.app` (alias storico, mantenuto volutamente fino all'acquisto del dominio definitivo)
+4. ⚠️ Nota: il dominio automatico `sostegno-maternita.vercel.app` (generato dal nome attuale del progetto) **non è collegato** alla produzione — risulta 404. Da rivedere quando si acquista il dominio personalizzato (vedi sezione "Da fare").
+5. Variabile d'ambiente da configurare su Vercel al cambio dominio: `SITE_URL=https://www.nuovodominio.it`
