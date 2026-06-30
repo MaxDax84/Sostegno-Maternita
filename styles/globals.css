@@ -159,6 +159,8 @@ p { line-height: 1.7; }
   left: 50%;
   transform: translateX(-50%);
   min-width: 280px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
