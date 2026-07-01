@@ -1,26 +1,33 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
+import LocalizedLink from "../../components/LocalizedLink";
 import Layout from "../../components/Layout";
 import { teamMembers } from "../../data/team";
+import { localizeMember } from "../../lib/team";
+import { ui } from "../../data/i18n";
 
 const lastName = (m) => m.name.split(" ").pop();
-const sortedTeam = [...teamMembers].sort((a, b) => lastName(a).localeCompare(lastName(b), "it"));
 
 export default function Team() {
+  const { locale } = useRouter();
+  const t = (ui[locale] || ui.it).team;
+  const sortLocale = locale === "en" ? "en" : "it";
+  const sortedTeam = teamMembers
+    .map((m) => localizeMember(m, locale))
+    .sort((a, b) => lastName(a).localeCompare(lastName(b), sortLocale));
+
   return (
     <Layout
-      title="Il Team"
-      description="Conosci le professioniste di Sostegno Maternità: psicologa perinatale specializzata in gravidanza, parto, depressione post-partum, PMA, aborto e morte fetale; educatrice per la prima infanzia specializzata in ambientamento asilo nido."
+      title={t.pageTitle}
+      description={t.metaDesc}
       keywords="psicologa perinatale Milano, educatrice prima infanzia Como, gravidanza, parto, depressione post partum, PMA, aborto, morte fetale, ambientamento asilo nido, supporto maternità"
       canonicalPath="/team"
     >
       <div className="page-header">
         <div className="container">
-          <span className="page-header-label">Chi siamo</span>
-          <h1>Il nostro Team</h1>
+          <span className="page-header-label">{t.pageLabel}</span>
+          <h1>{t.pageTitle}</h1>
           <p>
-            Professioniste di diversa formazione e specialità, accomunate
-            dalla passione per la maternità e dal desiderio di fare la
-            differenza nella vita delle coppie che si avvicinano alla genitorialità.
+            {t.pageDesc}
           </p>
         </div>
       </div>
@@ -29,7 +36,7 @@ export default function Team() {
         <div className="container">
           <div className="team-grid">
             {sortedTeam.map((member) => (
-              <Link href={`/team/${member.slug}`} key={member.id} className="team-card-link">
+              <LocalizedLink href={`/team/${member.slug}`} key={member.id} className="team-card-link">
                 <div className="team-card">
                   <div
                     className="team-card-header"
@@ -72,10 +79,10 @@ export default function Team() {
                       ))}
                     </div>
                     <div className="team-modes">{member.modes.join(" · ")}</div>
-                    <div className="team-card-cta">Scopri il profilo →</div>
+                    <div className="team-card-cta">{t.cardCta}</div>
                   </div>
                 </div>
-              </Link>
+              </LocalizedLink>
             ))}
           </div>
         </div>

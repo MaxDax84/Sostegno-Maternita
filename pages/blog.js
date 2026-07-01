@@ -1,23 +1,28 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
+import LocalizedLink from "../components/LocalizedLink";
 import Layout from "../components/Layout";
 import { posts } from "../data/posts";
+import { localizePost } from "../lib/posts";
+import { ui } from "../data/i18n";
 
 export default function Blog() {
+  const { locale } = useRouter();
+  const t = (ui[locale] || ui.it).blog;
+  const localizedPosts = posts.map((p) => localizePost(p, locale));
+
   return (
     <Layout
-      title="Blog"
-      description="Articoli su gravidanza, parto, depressione post-partum, aborto, morte fetale, PMA, infertilità, ambientamento asilo nido, ciuccio, pannolino e educazione 0-3 anni. Scritti da professioniste specializzate."
+      title={t.pageTitle}
+      description={t.metaDesc}
       keywords="gravidanza, parto, depressione post partum, aborto, morte fetale, PMA, infertilità, ambientamento, asilo nido, ciuccio, pannolino, regole, educazione prima infanzia, psicologia perinatale"
       canonicalPath="/blog"
     >
       <div className="page-header">
         <div className="container">
-          <span className="page-header-label">Risorse</span>
-          <h1>Blog</h1>
+          <span className="page-header-label">{t.pageLabel}</span>
+          <h1>{t.pageTitle}</h1>
           <p>
-            Articoli scritti dalle nostre professioniste per informare,
-            supportare e accompagnare ogni mamma e ogni papà nel proprio
-            percorso di genitorialità.
+            {t.pageDesc}
           </p>
         </div>
       </div>
@@ -25,8 +30,8 @@ export default function Blog() {
       <section className="section blog-section">
         <div className="container">
           <div className="blog-grid">
-            {posts.map((post) => (
-              <Link
+            {localizedPosts.map((post) => (
+              <LocalizedLink
                 href={`/blog/${post.slug}`}
                 className="blog-card"
                 key={post.id}
@@ -46,11 +51,11 @@ export default function Blog() {
                       {post.readTime}
                     </span>
                     <span className="blog-read-more">
-                      Leggi →
+                      {t.readMore}
                     </span>
                   </div>
                 </div>
-              </Link>
+              </LocalizedLink>
             ))}
           </div>
         </div>

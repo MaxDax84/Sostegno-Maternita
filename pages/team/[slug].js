@@ -1,24 +1,35 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
+import LocalizedLink from "../../components/LocalizedLink";
 import Layout from "../../components/Layout";
 import EmailReveal from "../../components/EmailReveal";
 import WhatsAppReveal from "../../components/WhatsAppReveal";
 import { teamMembers } from "../../data/team";
 import { posts } from "../../data/posts";
+import { localizeMember } from "../../lib/team";
+import { localizePost } from "../../lib/posts";
+import { ui } from "../../data/i18n";
 
 export async function getStaticPaths() {
+  const locales = ["it", "en"];
   return {
-    paths: teamMembers.map((m) => ({ params: { slug: m.slug } })),
+    paths: locales.flatMap((locale) =>
+      teamMembers.map((m) => ({ params: { slug: m.slug }, locale }))
+    ),
     fallback: false,
   };
 }
 
-export async function getStaticProps({ params }) {
-  const member = teamMembers.find((m) => m.slug === params.slug) ?? null;
-  const memberPosts = posts.filter((p) => p.authorSlug === params.slug);
+export async function getStaticProps({ params, locale }) {
+  const rawMember = teamMembers.find((m) => m.slug === params.slug) ?? null;
+  const rawPosts = posts.filter((p) => p.authorSlug === params.slug);
+  const member = rawMember ? localizeMember(rawMember, locale) : null;
+  const memberPosts = rawPosts.map((p) => localizePost(p, locale));
   return { props: { member, memberPosts } };
 }
 
 export default function TeamMember({ member, memberPosts }) {
+  const { locale } = useRouter();
+  const t = (ui[locale] || ui.it).member;
   if (!member) return null;
 
   return (
@@ -38,9 +49,9 @@ export default function TeamMember({ member, memberPosts }) {
     >
       <div className="page-header page-header-short">
         <div className="container">
-          <Link href="/team" className="article-back">
-            ← Il Team
-          </Link>
+          <LocalizedLink href="/team" className="article-back">
+            {t.back}
+          </LocalizedLink>
         </div>
       </div>
 
@@ -76,7 +87,7 @@ export default function TeamMember({ member, memberPosts }) {
               </div>
 
               <div className="sidebar-card">
-                <h3>Modalità di consulenza</h3>
+                <h3>{t.modesTitle}</h3>
                 {member.modes.map((m) => (
                   <div key={m} className="member-mode-item">
                     ✓ {m}
@@ -86,7 +97,7 @@ export default function TeamMember({ member, memberPosts }) {
 
               {member.publications && (
                 <div className="sidebar-card">
-                  <h3>Pubblicazioni</h3>
+                  <h3>{t.pubsTitle}</h3>
                   {member.publications.map((p) => (
                     <div key={p} className="member-pub-item">
                       📖 {p}
@@ -104,7 +115,7 @@ export default function TeamMember({ member, memberPosts }) {
                   rel="noopener noreferrer"
                   className="btn btn-outline member-cta-btn"
                 >
-                  🌐 Sito web
+                  🌐 {(ui[locale] || ui.it).contact.website}
                 </a>
               )}
               {member.instagram && (
@@ -151,12 +162,12 @@ export default function TeamMember({ member, memberPosts }) {
             {/* Main content */}
             <main className="member-main">
               <div className="member-section">
-                <h2>Profilo Professionale</h2>
+                <h2>{t.sectionProfile}</h2>
                 <p>{member.bio}</p>
               </div>
 
               <div className="member-section">
-                <h2>Aree di specializzazione</h2>
+                <h2>{t.sectionSpecialties}</h2>
                 <div className="member-specialties">
                   {member.specialties.map((s) => (
                     <div key={s} className="member-specialty-item">
@@ -169,7 +180,7 @@ export default function TeamMember({ member, memberPosts }) {
 
               {member.education && (
                 <div className="member-section">
-                  <h2>Formazione e Abilitazioni</h2>
+                  <h2>{t.sectionEducation}</h2>
                   <ul className="member-edu-list">
                     {member.education.map((e) => (
                       <li key={e}>{e}</li>
@@ -180,14 +191,14 @@ export default function TeamMember({ member, memberPosts }) {
 
               {memberPosts.length > 0 && (
                 <div className="member-section">
-                  <h2>Articoli</h2>
+                  <h2>{t.sectionArticles}</h2>
                   <div className="member-articles">
                     {memberPosts.map((p) => (
-                      <Link key={p.slug} href={`/blog/${p.slug}`} className="member-article-item">
+                      <LocalizedLink key={p.slug} href={`/blog/${p.slug}`} className="member-article-item">
                         <span className="member-article-category">{p.category}</span>
                         <span className="member-article-title">{p.title}</span>
                         <span className="member-article-read">{p.readTime} →</span>
-                      </Link>
+                      </LocalizedLink>
                     ))}
                   </div>
                 </div>

@@ -1,8 +1,8 @@
 import { posts } from "../data/posts";
 import { teamMembers } from "../data/team";
 
-const SITE_URL =
-  process.env.SITE_URL || "https://marcella-temporarysite.vercel.app";
+const SITE_URL = process.env.SITE_URL || "https://portale-maternita.vercel.app";
+const LOCALES = ["it", "en"];
 
 function generateSitemap() {
   const staticPages = [
@@ -21,16 +21,27 @@ function generateSitemap() {
     changefreq: "monthly",
   }));
 
+  const allPages = [...staticPages, ...teamPages, ...blogPages];
+
+  const urls = allPages.flatMap((p) =>
+    LOCALES.map((locale) => ({ ...p, locale }))
+  );
+
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...staticPages, ...teamPages, ...blogPages]
-  .map(
-    (p) => `  <url>
-    <loc>${SITE_URL}${p.path}</loc>
-    <changefreq>${p.changefreq}</changefreq>
-    <priority>${p.priority}</priority>
-  </url>`
-  )
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${urls
+  .map((u) => {
+    const path = u.path === "/" ? "" : u.path;
+    return `  <url>
+    <loc>${SITE_URL}/${u.locale}${path}</loc>
+${LOCALES.map(
+  (loc) =>
+    `    <xhtml:link rel="alternate" hreflang="${loc}" href="${SITE_URL}/${loc}${path}" />`
+).join("\n")}
+    <changefreq>${u.changefreq}</changefreq>
+    <priority>${u.priority}</priority>
+  </url>`;
+  })
   .join("\n")}
 </urlset>`;
 }

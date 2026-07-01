@@ -1,20 +1,25 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import CookieBanner from "./CookieBanner";
+import { ui } from "../data/i18n";
 
 const SITE_URL = process.env.SITE_URL || "";
+const LOCALES = ["it", "en"];
 
 export default function Layout({ children, title, description, keywords, canonicalPath, jsonLd }) {
+  const { locale } = useRouter();
+  const t = ui[locale] || ui.it;
+
   const siteTitle = title
     ? `${title} | Sostegno Maternità`
-    : "Sostegno Maternità — Sostegno alla Maternità Fisiologica e Patologica";
+    : t.layout.defaultTitle;
 
-  const siteDesc =
-    description ||
-    "Team di professioniste specializzate in gravidanza, parto, depressione post-partum, infertilità, PMA, aborto, morte fetale e psicologia perinatale. Supporto in presenza a Milano e online.";
+  const siteDesc = description || t.layout.defaultDescription;
 
-  const canonical = canonicalPath ? `${SITE_URL}${canonicalPath}` : null;
+  const path = canonicalPath === "/" ? "" : canonicalPath;
+  const canonical = canonicalPath ? `${SITE_URL}/${locale}${path}` : null;
 
   return (
     <>
@@ -26,9 +31,21 @@ export default function Layout({ children, title, description, keywords, canonic
         <meta property="og:title" content={siteTitle} />
         <meta property="og:description" content={siteDesc} />
         <meta property="og:type" content="website" />
-        <meta property="og:locale" content="it_IT" />
+        <meta property="og:locale" content={t.layout.ogLocale} />
         {canonical && <meta property="og:url" content={canonical} />}
         {canonical && <link rel="canonical" href={canonical} />}
+        {canonicalPath &&
+          LOCALES.map((loc) => (
+            <link
+              key={loc}
+              rel="alternate"
+              hrefLang={loc}
+              href={`${SITE_URL}/${loc}${path}`}
+            />
+          ))}
+        {canonicalPath && (
+          <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}/it${path}`} />
+        )}
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favicon.ico" />
         {jsonLd && (

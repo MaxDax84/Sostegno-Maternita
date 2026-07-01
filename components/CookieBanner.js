@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import { useRouter } from "next/router";
+import LocalizedLink from "./LocalizedLink";
+import { ui } from "../data/i18n";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
+  const { locale } = useRouter();
+  const t = (ui[locale] || ui.it).cookie;
 
   useEffect(() => {
     if (!localStorage.getItem("cookie_consent")) {
@@ -21,14 +25,13 @@ export default function CookieBanner() {
     <div className="cookie-banner">
       <div className="cookie-banner-inner">
         <p className="cookie-banner-text">
-          Questo sito utilizza cookie tecnici necessari al suo funzionamento.
-          Non utilizziamo cookie di profilazione o marketing.{" "}
-          <Link href="/cookie-policy" className="cookie-banner-link">
-            Maggiori informazioni
-          </Link>
+          {t.text}{" "}
+          <LocalizedLink href="/cookie-policy" className="cookie-banner-link">
+            {t.link}
+          </LocalizedLink>
         </p>
         <button className="cookie-banner-btn" onClick={accept}>
-          Ho capito
+          {t.accept}
         </button>
       </div>
     </div>

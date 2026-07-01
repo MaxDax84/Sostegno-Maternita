@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
+import { ui } from "../data/i18n";
 
 export default function EmailReveal({ email, btnClass }) {
   const [revealed, setRevealed] = useState(false);
+  const { locale } = useRouter();
+  const t = (ui[locale] || ui.it).contact;
   if (!email) return null;
 
   if (revealed) {
@@ -14,7 +18,7 @@ export default function EmailReveal({ email, btnClass }) {
 
   return (
     <button onClick={() => setRevealed(true)} className={btnClass}>
-      Mostra contatto
+      {t.showEmail}
     </button>
   );
 }

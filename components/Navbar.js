@@ -1,24 +1,34 @@
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import LocalizedLink from "./LocalizedLink";
+import LanguageSwitcher from "./LanguageSwitcher";
 import { teamMembers } from "../data/team";
+import { localizeMember } from "../lib/team";
+import { ui } from "../data/i18n";
 
-// Group by category, alphabetically sorted within each group and by category name
 const lastName = (m) => m.name.split(" ").pop();
-const groupedTeam = Object.entries(
-  [...teamMembers]
-    .sort((a, b) => lastName(a).localeCompare(lastName(b), "it"))
-    .reduce((acc, m) => {
-      const cat = m.category || "Altro";
-      (acc[cat] = acc[cat] || []).push(m);
-      return acc;
-    }, {})
-).sort(([a], [b]) => a.localeCompare(b, "it"));
+
+function groupTeam(members, locale) {
+  const sortLocale = locale === "en" ? "en" : "it";
+  return Object.entries(
+    members
+      .map((m) => localizeMember(m, locale))
+      .sort((a, b) => lastName(a).localeCompare(lastName(b), sortLocale))
+      .reduce((acc, m) => {
+        const cat = m.category || "Altro";
+        (acc[cat] = acc[cat] || []).push(m);
+        return acc;
+      }, {})
+  ).sort(([a], [b]) => a.localeCompare(b, sortLocale));
+}
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [teamOpen, setTeamOpen] = useState(false);
   const router = useRouter();
+  const locale = router.locale || "it";
+  const t = ui[locale] || ui.it;
+  const groupedTeam = groupTeam(teamMembers, locale);
 
   useEffect(() => {
     const handleRouteChange = () => { setOpen(false); setTeamOpen(false); };
@@ -26,63 +36,67 @@ export default function Navbar() {
     return () => router.events.off("routeChangeStart", handleRouteChange);
   }, [router.events]);
 
+  const teamActive = router.pathname === "/team" || router.pathname === "/team/[slug]";
+
   return (
     <>
       <nav className="navbar">
         <div className="container navbar-inner">
-          <Link href="/" className="navbar-logo">
+          <LocalizedLink href="/" className="navbar-logo">
             Sostegno Maternità
-          </Link>
+          </LocalizedLink>
 
           <div className="navbar-links">
-            <Link href="/" className={router.pathname === "/" ? "active" : ""}>
-              Home
-            </Link>
+            <LocalizedLink href="/" className={router.pathname === "/" ? "active" : ""}>
+              {t.nav.home}
+            </LocalizedLink>
 
             {/* Dropdown Il Team */}
             <div className="navbar-dropdown">
-              <Link
+              <LocalizedLink
                 href="/team"
-                className={router.pathname.startsWith("/team") ? "active navbar-dropdown-trigger" : "navbar-dropdown-trigger"}
+                className={teamActive ? "active navbar-dropdown-trigger" : "navbar-dropdown-trigger"}
               >
-                Il Team <span className="navbar-dropdown-arrow">▾</span>
-              </Link>
+                {t.nav.team} <span className="navbar-dropdown-arrow">▾</span>
+              </LocalizedLink>
               <div className="navbar-dropdown-menu">
-                <Link href="/team" className="navbar-dropdown-all">
-                  Tutto il team
-                </Link>
+                <LocalizedLink href="/team" className="navbar-dropdown-all">
+                  {t.nav.allTeam}
+                </LocalizedLink>
                 {groupedTeam.map(([category, members]) => (
                   <div key={category}>
                     <div className="navbar-dropdown-divider" />
                     <div className="navbar-dropdown-category">{category}</div>
                     {members.map((m) => (
-                      <Link
+                      <LocalizedLink
                         key={m.slug}
                         href={`/team/${m.slug}`}
                         className="navbar-dropdown-item"
                       >
                         <span className="navbar-dropdown-name">{m.name}</span>
                         <span className="navbar-dropdown-role">{m.role}</span>
-                      </Link>
+                      </LocalizedLink>
                     ))}
                   </div>
                 ))}
               </div>
             </div>
 
-            <Link href="/blog" className={router.pathname.startsWith("/blog") ? "active" : ""}>
-              Blog
-            </Link>
+            <LocalizedLink href="/blog" className={router.pathname.startsWith("/blog") ? "active" : ""}>
+              {t.nav.blog}
+            </LocalizedLink>
 
-            <Link href="mailto:mmarcone@me.com" className="navbar-cta">
-              Contattaci
-            </Link>
+            <a href="mailto:mmarcone@me.com" className="navbar-cta">
+              {t.nav.contact}
+            </a>
+
+            <LanguageSwitcher className="navbar-lang" />
           </div>
 
           <button
             className={`navbar-hamburger${open ? " is-open" : ""}`}
             onClick={() => setOpen(!open)}
-            aria-label={open ? "Chiudi menu" : "Apri menu"}
+            aria-label={open ? t.nav.closeMenu : t.nav.openMenu}
             aria-expanded={open}
           >
             <span />
@@ -97,40 +111,41 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div className={`mobile-menu${open ? " open" : ""}`}>
-        <Link href="/" onClick={() => setOpen(false)}>Home</Link>
+        <LocalizedLink href="/" onClick={() => setOpen(false)}>{t.nav.home}</LocalizedLink>
 
         <button
           className="mobile-menu-team-toggle"
           onClick={() => setTeamOpen(!teamOpen)}
         >
-          Il Team <span>{teamOpen ? "▴" : "▾"}</span>
+          {t.nav.team} <span>{teamOpen ? "▴" : "▾"}</span>
         </button>
         {teamOpen && (
           <div className="mobile-menu-submenu">
-            <Link href="/team" onClick={() => { setOpen(false); setTeamOpen(false); }}>
-              Tutto il team
-            </Link>
+            <LocalizedLink href="/team" onClick={() => { setOpen(false); setTeamOpen(false); }}>
+              {t.nav.allTeam}
+            </LocalizedLink>
             {groupedTeam.map(([category, members]) => (
               <div key={category}>
                 <div className="mobile-menu-submenu-category">{category}</div>
                 {members.map((m) => (
-                  <Link
+                  <LocalizedLink
                     key={m.slug}
                     href={`/team/${m.slug}`}
                     onClick={() => { setOpen(false); setTeamOpen(false); }}
                   >
                     {m.name}
-                  </Link>
+                  </LocalizedLink>
                 ))}
               </div>
             ))}
           </div>
         )}
 
-        <Link href="/blog" onClick={() => setOpen(false)}>Blog</Link>
-        <Link href="mailto:mmarcone@me.com" onClick={() => setOpen(false)}>
-          Contattaci
-        </Link>
+        <LocalizedLink href="/blog" onClick={() => setOpen(false)}>{t.nav.blog}</LocalizedLink>
+        <a href="mailto:mmarcone@me.com" onClick={() => setOpen(false)}>
+          {t.nav.contact}
+        </a>
+        <LanguageSwitcher className="mobile-menu-lang" />
       </div>
     </>
   );

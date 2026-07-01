@@ -1,17 +1,25 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
+import LocalizedLink from "../../components/LocalizedLink";
 import Layout from "../../components/Layout";
 import { posts } from "../../data/posts";
+import { localizePost } from "../../lib/posts";
+import { ui } from "../../data/i18n";
 
 export async function getStaticPaths() {
+  const locales = ["it", "en"];
   return {
-    paths: posts.map((p) => ({ params: { slug: p.slug } })),
+    paths: locales.flatMap((locale) =>
+      posts.map((p) => ({ params: { slug: p.slug }, locale }))
+    ),
     fallback: false,
   };
 }
 
-export async function getStaticProps({ params }) {
-  const post = posts.find((p) => p.slug === params.slug) || null;
-  const related = posts.filter((p) => p.slug !== params.slug).slice(0, 3);
+export async function getStaticProps({ params, locale }) {
+  const rawPost = posts.find((p) => p.slug === params.slug) || null;
+  const rawRelated = posts.filter((p) => p.slug !== params.slug).slice(0, 3);
+  const post = rawPost ? localizePost(rawPost, locale) : null;
+  const related = rawRelated.map((p) => localizePost(p, locale));
   return { props: { post, related } };
 }
 
@@ -43,6 +51,8 @@ function renderBlock(block, i) {
 }
 
 export default function BlogPost({ post, related }) {
+  const { locale } = useRouter();
+  const t = (ui[locale] || ui.it).blogPost;
   if (!post) return null;
 
   const jsonLd = {
@@ -71,9 +81,9 @@ export default function BlogPost({ post, related }) {
     >
       <div className="article-wrapper">
         <div className="container">
-          <Link href="/blog" className="article-back">
-            ← Torna al Blog
-          </Link>
+          <LocalizedLink href="/blog" className="article-back">
+            {t.back}
+          </LocalizedLink>
 
           <div className="article-layout">
             {/* ── MAIN CONTENT ── */}
@@ -87,7 +97,7 @@ export default function BlogPost({ post, related }) {
                 <span className="article-banner-category">{post.category}</span>
                 <h1 className="article-banner-title">{post.title}</h1>
                 <div className="article-banner-meta">
-                  {post.readTime} di lettura
+                  {post.readTime} {t.readTimeSuffix}
                 </div>
               </div>
 
@@ -115,12 +125,12 @@ export default function BlogPost({ post, related }) {
                 </div>
                 <div>
                   {post.authorSlug ? (
-                    <Link
+                    <LocalizedLink
                       href={`/team/${post.authorSlug}`}
                       style={{ fontWeight: 600, fontSize: "0.95rem", color: "var(--green)", textDecoration: "underline", textUnderlineOffset: 3 }}
                     >
                       {post.author}
-                    </Link>
+                    </LocalizedLink>
                   ) : (
                     <div style={{ fontWeight: 600, fontSize: "0.95rem", color: "var(--text)" }}>
                       {post.author}
@@ -130,7 +140,7 @@ export default function BlogPost({ post, related }) {
                     {post.authorRole}
                   </div>
                   <div style={{ fontSize: "0.82rem", color: "var(--text-light)", marginTop: 2 }}>
-                    {post.readTime} di lettura
+                    {post.readTime} {t.readTimeSuffix}
                   </div>
                 </div>
               </div>
@@ -139,41 +149,39 @@ export default function BlogPost({ post, related }) {
             {/* ── SIDEBAR ── */}
             <aside className="article-sidebar">
               <div className="sidebar-card">
-                <h3>Altri articoli</h3>
+                <h3>{t.relatedTitle}</h3>
                 {related.map((p) => (
-                  <Link href={`/blog/${p.slug}`} className="sidebar-post" key={p.id}>
+                  <LocalizedLink href={`/blog/${p.slug}`} className="sidebar-post" key={p.id}>
                     <div className="sidebar-post-title">{p.title}</div>
                     <div className="sidebar-post-date">{p.readTime}</div>
-                  </Link>
+                  </LocalizedLink>
                 ))}
               </div>
 
               <div className="sidebar-card">
-                <h3>Hai bisogno di supporto?</h3>
+                <h3>{t.needSupportTitle}</h3>
                 <p style={{ fontSize: "0.86rem", color: "var(--text-mid)", lineHeight: 1.7, marginBottom: 16 }}>
-                  Il nostro team è pronto ad ascoltarti. Contattaci per trovare
-                  la professionista più adatta a te.
+                  {t.needSupportDesc}
                 </p>
                 <a
                   href="mailto:mmarcone@me.com"
                   className="btn btn-primary"
                   style={{ width: "100%", justifyContent: "center", fontSize: "0.85rem" }}
                 >
-                  Scrivici
+                  {t.writeUs}
                 </a>
               </div>
 
               <div className="sidebar-card">
-                <h3>Il nostro team</h3>
-                <Link href="/team" style={{ display: "block", marginTop: 8 }}>
+                <h3>{t.teamTitle}</h3>
+                <LocalizedLink href="/team" style={{ display: "block", marginTop: 8 }}>
                   <div style={{ fontSize: "0.86rem", color: "var(--text-mid)", lineHeight: 1.7, marginBottom: 12 }}>
-                    Psicologhe, ostetriche, fisioterapiste, consulenti e nutrizioniste
-                    specializzate nella maternità.
+                    {t.teamDesc}
                   </div>
                   <span style={{ fontSize: "0.82rem", fontWeight: 600, color: "var(--green)" }}>
-                    Conosci il team →
+                    {t.teamCta}
                   </span>
-                </Link>
+                </LocalizedLink>
               </div>
             </aside>
           </div>
