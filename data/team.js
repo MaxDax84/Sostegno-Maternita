@@ -67,6 +67,7 @@ export const teamMembers = [
     category: "Ostetricia",
     city: "Milano",
     address: "Milano",
+    contact: "ostetricagiuliana@gmail.com",
     photo: "/giuliana-pino.jpg",
     avatar: "GP",
     color: "#5B9090",
