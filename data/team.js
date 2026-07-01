@@ -39,6 +39,7 @@ export const teamMembers = [
     category: "Ostetricia",
     city: "Milano",
     address: "Milano",
+    contact: "Fabianat13@hotmail.it",
     photo: "/fabiana-toneatto.jpg",
     avatar: "FT",
     color: "#A67060",
