@@ -219,7 +219,7 @@ export const teamMembers = [
   {
     id: 8,
     slug: "federica-arcuri",
-    name: "Federica Arcuri",
+    name: "Dott.ssa Federica Arcuri",
     role: "Integrative Nutrition Health Coach | Integrative Fertility Coach",
     category: "Nutrizione e Fertilità",
     city: "New York",

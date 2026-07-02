@@ -144,7 +144,7 @@ export const teamTranslations = {
     ],
   },
   "federica-arcuri": {
-    name: "Federica Arcuri",
+    name: "Dr. Federica Arcuri",
     role: "Integrative Nutrition Health Coach | Integrative Fertility Coach",
     category: "Nutrition and Fertility",
     bio: "Integrative Nutrition Health Coach and Integrative Fertility Coach specialized in fertility, hormonal health, and functional nutrition for women across the different stages of reproductive life. Trained at the Institute for Integrative Nutrition in New York, she holds a specialization in Integrative Fertility Coaching and is furthering her expertise in Integrative and Functional Medicine and Nutrition at IFNA. She supports women preparing for pregnancy, going through a fertility journey, or seeking to restore their hormonal balance, through individual consultations, personalized programs, and online courses. She pays particular attention to gut, thyroid, and liver health, reducing endocrine disruptors, and optimizing lifestyle.",
