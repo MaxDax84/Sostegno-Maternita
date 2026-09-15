@@ -142,6 +142,7 @@ export const teamMembers = [
     ],
     contact: "dottoressabensi.psico@gmail.com",
     whatsapp: "393934802237",
+    website: "https://www.simonabensi.it",
     modes: ["In presenza – Piacenza", "Online"],
     experience: "",
     education: [
