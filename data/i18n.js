@@ -67,6 +67,8 @@ export const ui = {
       pageTitle: "Il nostro Team",
       pageDesc: "Professioniste di diversa formazione e specialità, accomunate dalla passione per la maternità e dal desiderio di fare la differenza nella vita delle coppie che si avvicinano alla genitorialità.",
       cardCta: "Scopri il profilo →",
+      searchPlaceholder: "Cerca per nome…",
+      noResults: "Nessun professionista trovato con questo nome.",
       metaDesc: "Conosci le professioniste di Sostegno alla Genitorialità: psicologhe perinatali, ostetriche e nutrizioniste specializzate in gravidanza, parto e prima infanzia.",
     },
     member: {
@@ -199,6 +201,8 @@ export const ui = {
       pageTitle: "Our Team",
       pageDesc: "Professionals from different backgrounds and specialties, united by a passion for motherhood and the desire to make a difference in the lives of couples approaching parenthood.",
       cardCta: "View profile →",
+      searchPlaceholder: "Search by name…",
+      noResults: "No professional found with this name.",
       metaDesc: "Meet the Sostegno alla Genitorialità team: perinatal psychologists, midwives, and specialists in pregnancy, childbirth, and early childhood.",
     },
     member: {

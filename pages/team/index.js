@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import LocalizedLink from "../../components/LocalizedLink";
@@ -7,6 +8,7 @@ import { localizeMember } from "../../lib/team";
 import { ui } from "../../data/i18n";
 
 const lastName = (m) => m.name.split(" ").pop();
+const normalize = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
 export default function Team() {
   const { locale } = useRouter();
@@ -15,6 +17,9 @@ export default function Team() {
   const sortedTeam = teamMembers
     .map((m) => localizeMember(m, locale))
     .sort((a, b) => lastName(a).localeCompare(lastName(b), sortLocale));
+  const [searchQuery, setSearchQuery] = useState("");
+  const query = normalize(searchQuery.trim());
+  const filteredTeam = sortedTeam.filter((m) => !query || normalize(m.name).includes(query));
 
   return (
     <Layout
@@ -35,8 +40,21 @@ export default function Team() {
 
       <section className="section team-section">
         <div className="container">
+          <input
+            type="search"
+            className="blog-search"
+            placeholder={t.searchPlaceholder}
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            aria-label={t.searchPlaceholder}
+          />
+
+          {filteredTeam.length === 0 && (
+            <p className="blog-no-results">{t.noResults}</p>
+          )}
+
           <div className="team-grid">
-            {sortedTeam.map((member) => (
+            {filteredTeam.map((member) => (
               <LocalizedLink href={`/team/${member.slug}`} key={member.id} className="team-card-link">
                 <div className="team-card">
                   <div
