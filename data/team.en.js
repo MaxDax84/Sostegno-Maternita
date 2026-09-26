@@ -241,4 +241,24 @@ export const teamTranslations = {
       "Training in regressive hypnosis, deep meditation, family and systemic constellations, metamorphic technique, Theta Healing",
     ],
   },
+  "stefania-varotto": {
+    name: "Stefania Varotto",
+    role: "Certified Gentle Sleep Coach® Child Sleep Consultant",
+    category: "Child Sleep",
+    bio: "Certified Gentle Sleep Coach® child sleep consultant and founder of Ritmo Sereno. She helps families with children aged 0 to 6 better understand their child's sleep and find a more sustainable balance for the whole family. Her work always starts from an analysis of the overall picture: age and developmental stage, daily rhythm, daytime sleep, wake windows, routines, how the child falls asleep, and night wakings. In the first months she guides parents in building good sleep foundations while respecting the newborn's physiology. From 6 months she also offers personalized programs to address difficulties with falling asleep, frequent wakings, naps, and daily scheduling.",
+    specialties: [
+      "Newborn sleep and early sleep foundations",
+      "Frequent night wakings",
+      "Difficulty falling asleep",
+      "Nap scheduling and daily rhythm",
+      "Sleep routines",
+      "Sleep transitions and changes: dropping naps, starting nursery, moving to their own room",
+      "Guidance toward ways of falling asleep that are more sustainable for the family",
+    ],
+    modes: ["Online – Consultations throughout Italy"],
+    experience: "",
+    education: [
+      "Gentle Sleep Coach® professional certification, program created by Kim West, The Sleep Lady®",
+    ],
+  },
 };
