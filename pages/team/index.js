@@ -22,7 +22,7 @@ export default function Team() {
   const filteredTeam = sortedTeam.filter(
     (m) =>
       !query ||
-      [m.name, m.role, m.category, ...m.specialties].some((f) => f && normalize(f).includes(query))
+      [m.name, m.role, m.category, ...m.specialties, ...(m.education || [])].some((f) => f && normalize(f).includes(query))
   );
 
   return (
