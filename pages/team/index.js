@@ -19,7 +19,11 @@ export default function Team() {
     .sort((a, b) => lastName(a).localeCompare(lastName(b), sortLocale));
   const [searchQuery, setSearchQuery] = useState("");
   const query = normalize(searchQuery.trim());
-  const filteredTeam = sortedTeam.filter((m) => !query || normalize(m.name).includes(query));
+  const filteredTeam = sortedTeam.filter(
+    (m) =>
+      !query ||
+      [m.name, m.role, m.category, ...m.specialties].some((f) => f && normalize(f).includes(query))
+  );
 
   return (
     <Layout
