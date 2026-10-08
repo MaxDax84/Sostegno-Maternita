@@ -8148,5 +8148,382 @@ export const postTranslations = {
         "text": "Dr M. Mazzanti, dental surgeon"
       }
     ]
+  },
+  "lo-yoga-un-alleato-sempre-a-disposizione": {
+    "title": "Yoga, an Ally Always at Hand",
+    "excerpt": "Breathing, postures, and visualizations: how yoga supports the mother-to-be from conception to birth, and beyond.",
+    "keywords": "prenatal yoga, yoga in pregnancy, breathing in pregnancy, posture in pregnancy, wellbeing in pregnancy, connecting with the baby",
+    "category": "Pregnancy",
+    "authorRole": "EFOA Yoga teacher, specialist in maternity and children's yoga",
+    "content": [
+      {
+        "type": "p",
+        "text": "Pregnancy, a time of great change in a woman's life, can be supported by yoga. The breathing, postures, and visualizations of this discipline offer the mother daily help, from the moment of conception through to birth and beyond."
+      },
+      {
+        "type": "p",
+        "text": "I have practised since I was nineteen and, from the very beginning, this discipline fascinated me with its simplicity. With just a few exercises and the right attitude of awareness, it is possible to change the course of the day."
+      },
+      {
+        "type": "p",
+        "text": "As a teacher I have been able to observe the effect of yoga on many people with different life experiences, and I applied this experience directly to my own practice, including during those nine months when a new life was growing inside me."
+      },
+      {
+        "type": "p",
+        "text": "It was a truly special time, when I rediscovered in yoga a support able to work deeply and, at the same time, gently."
+      },
+      {
+        "type": "p",
+        "text": "The practice of yoga proves to be real help for a woman during that phase of total transformation of the body, the mind, the emotions, and her attitude towards life."
+      },
+      {
+        "type": "p",
+        "text": "What helped me most in particular was attention to the breath, one of the fundamental elements of yoga. Mindfully listening to the air entering and leaving our body is something that can be applied straight away, with no contraindications."
+      },
+      {
+        "type": "p",
+        "text": "Among the many benefits of prenatal yoga, the most important for me is being able to connect with the baby. A deep bond is created simply by stopping, sitting down, starting to listen to your own breath, and imagining sending light and love to the life growing inside you."
+      },
+      {
+        "type": "p",
+        "text": "Yoga also offers psychological support, encouraging good physical and emotional preparation for one of the most explosive moments in a woman's life: childbirth (but I will explore this topic in another article)."
+      },
+      {
+        "type": "p",
+        "text": "Doing yoga during pregnancy also helps strengthen the muscles and keep under control the leg and back pain that is often inevitable as the baby grows bigger and heavier. The exercises help you manage your posture, always keeping the body well aligned according to the changes under way."
+      },
+      {
+        "type": "p",
+        "text": "And if you cannot practise directly with your body, because of pain or discomfort, yoga can help even through simple visualizations."
+      },
+      {
+        "type": "p",
+        "text": "It is right to remember that, if you have never practised before, you should ask your midwife and your trusted doctor for advice, and rely on a teacher experienced in pregnancy yoga."
+      },
+      {
+        "type": "p",
+        "text": "Every mother-to-be can draw from yoga whatever she needs most."
+      },
+      {
+        "type": "p",
+        "text": "So if you are expecting, don't hesitate: roll out your mat or sit on a large cushion and begin your practice."
+      },
+      {
+        "type": "p",
+        "text": "L. Bugatti, EFOA Yoga teacher, specialist in maternity and children's yoga (www.yogacristallo.it)"
+      }
+    ]
+  },
+  "yoga-e-primo-trimestre-di-gravidanza": {
+    "title": "Yoga and the First Trimester of Pregnancy",
+    "excerpt": "In the first trimester, yoga helps through abdominal breathing, posture, contact with the earth, and the sound of the vowels.",
+    "keywords": "first trimester yoga, yoga in pregnancy, abdominal breathing, posture in pregnancy, nausea and tiredness, pregnancy exercises",
+    "category": "Pregnancy",
+    "authorRole": "EFOA Yoga teacher, specialist in maternity and children's yoga",
+    "content": [
+      {
+        "type": "p",
+        "text": "The first trimester of pregnancy is the time of creation, when a new life begins to grow inside us."
+      },
+      {
+        "type": "p",
+        "text": "It often happens that we only find out after a few weeks and, even though there are no visible signs yet, great changes are taking place inside the mother-to-be."
+      },
+      {
+        "type": "p",
+        "text": "These changes can cause nausea and tiredness, until the body has adapted to its new state."
+      },
+      {
+        "type": "p",
+        "text": "A constant feeling of sleepiness will accompany us through the first twelve weeks of pregnancy, because our body is drawing on all its strength to create our baby."
+      },
+      {
+        "type": "p",
+        "text": "During this period we can begin to become aware of our new condition."
+      },
+      {
+        "type": "p",
+        "text": "From the moment of conception the new life connects to us and experiences everything we experience. It is nourished by our food, our emotions, our thoughts, our feelings."
+      },
+      {
+        "type": "p",
+        "text": "For this reason we should try to be calm, serene, and joyful."
+      },
+      {
+        "type": "p",
+        "text": "We need to take time to rest, listen to ourselves, and connect with our baby."
+      },
+      {
+        "type": "p",
+        "text": "Yoga can help us above all through abdominal breathing. Being aware of the air entering and leaving the body, following its path from the belly, is an excellent support for feeling calm."
+      },
+      {
+        "type": "p",
+        "text": "We are breathing for ourselves and for our baby, and learning to breathe fully and in a relaxed way will increase the oxygen level for both."
+      },
+      {
+        "type": "p",
+        "text": "Good breathing will massage the internal organs and stimulate circulation and digestion."
+      },
+      {
+        "type": "p",
+        "text": "In the first trimester it is very important to pay attention to posture. Head and neck are upright and balanced between the shoulders, and the spine and pelvis should be well aligned. The abdominal and pelvic muscles need to be strong to support the baby's growth."
+      },
+      {
+        "type": "p",
+        "text": "The chest should be kept open so that the breathing muscles can work at their best. In these months, standing asanas are particularly recommended to strengthen the legs and improve blood circulation."
+      },
+      {
+        "type": "p",
+        "text": "Forcing or creating tension on the abdomen, as well as inverted postures, is always discouraged."
+      },
+      {
+        "type": "p",
+        "text": "We can spend time in nature, connecting with the earth element that links us to creation."
+      },
+      {
+        "type": "p",
+        "text": "This means, for example, walking barefoot on a lawn, feeling the contact of the foot with every step. We can also lie down and imagine the body receiving great support from the earth, an element that gives stability and security."
+      },
+      {
+        "type": "p",
+        "text": "If you can't get out into nature, these simple awareness exercises can be done at home, carving out a moment just for yourself."
+      },
+      {
+        "type": "p",
+        "text": "Another great help can come from sounds. Using the voice to repeat the vowels, for example, in the sequence I, E, A, O, U, is an excellent way to reach and massage every part of the body. For this exercise you need a comfortable position, standing or seated. Breathe in through the nose and then begin to make the sound I until the out-breath is complete. Then again, three or four times."
+      },
+      {
+        "type": "p",
+        "text": "Then move on to the sound E, again for three or four breaths, and continue with the following ones. At the end, for a few minutes, stay and listen to the vibration the sounds have left in your body."
+      },
+      {
+        "type": "p",
+        "text": "Our journey towards birth has only just begun: let's try to make it wonderful in every moment."
+      },
+      {
+        "type": "p",
+        "text": "In the video section of my website (https://yogacristallo.it/video) you can find some simple exercises that can be done during pregnancy, starting from the first trimester."
+      },
+      {
+        "type": "p",
+        "text": "L. Bugatti, EFOA Yoga teacher, specialist in maternity and children's yoga (www.yogacristallo.it)"
+      }
+    ]
+  },
+  "yoga-e-secondo-trimestre-di-gravidanza": {
+    "title": "Yoga and the Second Trimester of Pregnancy",
+    "excerpt": "From week fourteen to week twenty-eight: posture, mountain pose, and a sun salutation adapted for pregnancy.",
+    "keywords": "second trimester yoga, yoga in pregnancy, mountain pose, sun salutation in pregnancy, back pain in pregnancy, posture",
+    "category": "Pregnancy",
+    "authorRole": "EFOA Yoga teacher, specialist in maternity and children's yoga",
+    "content": [
+      {
+        "type": "p",
+        "text": "In these days that keep us at home, if we are expecting, let's try to stay strong and energized for ourselves and for our baby. Now more than ever, we can get in deep touch with our inner world."
+      },
+      {
+        "type": "p",
+        "text": "The second trimester of pregnancy runs from the fourteenth to the twenty-eighth week."
+      },
+      {
+        "type": "p",
+        "text": "During this period the body changes visibly, and our aim is to accompany it through its changes."
+      },
+      {
+        "type": "p",
+        "text": "We become more aware of the new life growing inside us and learn to be more connected to it."
+      },
+      {
+        "type": "p",
+        "text": "This is the ideal time to enjoy the practice of yoga, which should always be adapted to the growth of the uterus."
+      },
+      {
+        "type": "p",
+        "text": "The weight of the belly will in fact start to strain the lower back, which could cause back discomfort. Let's help ourselves by paying attention to posture with these questions: Where do I feel my weight? On both feet? More towards the toes or the heels? Is my spine straight and lengthening upwards, or is it curved?"
+      },
+      {
+        "type": "p",
+        "text": "Now, with greater body awareness, let's distribute our weight evenly on both feet, neither too far forward nor too far back, and align the spine towards the sky."
+      },
+      {
+        "type": "p",
+        "text": "This simple exercise can be done at any time of day as a valuable support for keeping the back healthy and strong."
+      },
+      {
+        "type": "p",
+        "text": "We can get further excellent help from mountain pose. It is one of the simplest and most powerful asanas in yoga, able to give both strength and calm."
+      },
+      {
+        "type": "p",
+        "text": "Standing upright, feet and legs together, the spine aligned with the sky. Open the arms slightly outwards as if they were the slopes of a mountain, and hold the position still."
+      },
+      {
+        "type": "p",
+        "text": "After a few breaths, imagine drawing in a yellow light that, from the feet, brings the strength of the earth into you, and, from the head, a blue light that gives the calm of the sky. Hold the position for a few breaths and then release it, bringing your hands to your belly and staying a few moments in listening."
+      },
+      {
+        "type": "p",
+        "text": "During this important moment, let our inner world absorb the benefits that the asana has set in motion. In pregnancy this allows us to connect deeply with the life growing inside us."
+      },
+      {
+        "type": "p",
+        "text": "In addition, in the second trimester the nausea and tiredness of the first months decrease or disappear altogether, and we begin to have an aura of new vitality."
+      },
+      {
+        "type": "p",
+        "text": "Thanks to the sun salutation, adapted for the months of pregnancy, we can feel charged and full of new energy. And with the cat movements we loosen and make the pelvis and spine flexible. You can find both these exercises at this link: https://yogacristallo.it/video/"
+      },
+      {
+        "type": "p",
+        "text": "Experiment joyfully and get in touch to let me know about your experiences."
+      },
+      {
+        "type": "p",
+        "text": "These months should be celebrated in every moment, which is why it is important to stay connected to beauty. We also need to understand that pregnancy is many things: it has its bright sides and its dark sides. We can observe and welcome both."
+      },
+      {
+        "type": "p",
+        "text": "A wonderful exercise that I have found very useful is to notice where our fears and worries arise, then shake the whole body from the arms to the legs, as if we were made of soft fabric, and then let them go with an out-breath. Then we pause for a few moments and imagine being wrapped in a golden light."
+      },
+      {
+        "type": "p",
+        "text": "Let's rediscover ourselves every day, every moment, and always stay connected to the breath and to our baby, sending them serenity, calm, and joy."
+      },
+      {
+        "type": "p",
+        "text": "L. Bugatti, EFOA Yoga teacher, specialist in maternity and children's yoga (www.yogacristallo.it)"
+      }
+    ]
+  },
+  "cose-lo-yoga-in-fascia-prima-parte": {
+    "title": "Yoga in Fascia® (part one)",
+    "excerpt": "Babywearing yoga bridges pregnancy and postpartum: practising heart to heart with your baby and rediscovering the ancient art of carrying.",
+    "keywords": "babywearing yoga, postpartum yoga, babywearing, baby carrying, yoga with your newborn, art of carrying",
+    "category": "Postpartum",
+    "authorRole": "Yoga in Fascia® (babywearing yoga) teacher",
+    "content": [
+      {
+        "type": "highlight",
+        "text": "Breathe, bring heart to heart, and feel again"
+      },
+      {
+        "type": "p",
+        "text": "A soft caress, skin-to-skin contact, warmth, hearts coming together... What am I talking about? Yoga in Fascia, of course: yoga with your baby in a wrap."
+      },
+      {
+        "type": "p",
+        "text": "What could be more beautiful, after practising yoga in pregnancy, than continuing yoga together with your baby, skin to skin? Yoga in Fascia was in fact created to join the time of pregnancy with that of postpartum. To introduce all new mothers to the art of babywearing so they can practise together, heart to heart."
+      },
+      {
+        "type": "p",
+        "text": "First of all, I feel I should introduce myself: I am Martina Matarese, I live in the province of Pisa, I have taught Hatha Yoga and pregnancy yoga since 2008, and I entered the wonderful world of Yoga in Fascia in 2019."
+      },
+      {
+        "type": "p",
+        "text": "I discovered it by chance (although, to be honest, I don't really believe in chance): I was looking for a course to deepen my knowledge of pregnancy or postpartum yoga, and I found it. In fact, I finally found the link that connects these two unforgettable moments. That is how I met Micaela over the phone and later Stefania, my teachers who, together with other instructors, trained me and literally carried me into this magical world of Yoga in Fascia."
+      },
+      {
+        "type": "p",
+        "text": "The training was extremely important to me and truly opened my eyes to all the potential of this practice, so necessary and beneficial."
+      },
+      {
+        "type": "p",
+        "text": "Indeed, once a baby has finally been born and a mother has been born too (with all the joys, but also the fears and difficulties that can be met during pregnancy or birth), a wonderful meeting between them that helps them find a moment of union needs a practice that eases communication between them, 'verbal and not'."
+      },
+      {
+        "type": "p",
+        "text": "A mother who should do nothing more than have the right conditions and tools to listen to her own needs and those of her baby, and let go... recognizing herself in gentle movements of opening and cuddling, but also of gathering in: it almost seems like a magical dance, unique of its kind, so intimate and natural."
+      },
+      {
+        "type": "p",
+        "text": "The art of carrying has been learned since ancient times and is widespread all over the world; the technological revolution, that is, the birth of supports for carrying one's children, dates back 50 years."
+      },
+      {
+        "type": "p",
+        "text": "The invention of these supports would have lengthened gestation and therefore lengthened and improved the chances of human young reaching maturity of the skull and the body."
+      },
+      {
+        "type": "p",
+        "text": "With the arrival of agriculture and settled life, the ways of carrying children changed to increase their chances of survival. (Quoted from T. Taylor – University of Bradford – The Artificial Ape)"
+      },
+      {
+        "type": "p",
+        "text": "In every country or area of the world, a specific type of carrier became most widespread, better able than others to meet particular needs: a hot or cold climate, the kinds of work mothers did, and cultural or traditional carrying positions."
+      },
+      {
+        "type": "p",
+        "text": "Climate obviously had a strong influence on the types of carriers used, in terms of materials (the fabric, its thickness), the baby's position, and finally the very inclination to carry children, with what we might call “sociocultural” implications."
+      },
+      {
+        "type": "p",
+        "text": "Bibliography and references: M. Placentino, V. Contessi, Yoga nel post parto, yoga in fascia, Overture ed.; www.babywearingitalia.it"
+      },
+      {
+        "type": "p",
+        "text": "Martina Matarese, Yoga in Fascia teacher (Instagram: @yogamartina)"
+      }
+    ]
+  },
+  "yoga-in-fascia-seconda-parte": {
+    "title": "Yoga in Fascia® (part two)",
+    "excerpt": "The evolution of babywearing: why the wrap is a lifestyle choice today and why Yoga in Fascia is practised in a circle.",
+    "keywords": "babywearing yoga, babywearing, baby wrap, postpartum yoga, heart chakra, circle of mothers",
+    "category": "Postpartum",
+    "authorRole": "Yoga in Fascia® (babywearing yoga) teacher",
+    "content": [
+      {
+        "type": "h2",
+        "text": "The evolution of babywearing"
+      },
+      {
+        "type": "highlight",
+        "text": "“The wrap is a (different) way of being (well) together” (1)"
+      },
+      {
+        "type": "p",
+        "text": "In modern times, carrying in a wrap can take on new meanings: the support in which the baby is carried is now certainly one alternative among many, or an excellent and well-considered choice, unlike the need for survival of the past. I will explain why."
+      },
+      {
+        "type": "p",
+        "text": "As well as benefits for children's growth and development (scientifically documented), “it seems that the larger size of the human brain was made possible precisely by the invention of supports for carrying children” (2). Today, when we carry a baby in a wrap, we are not using a means of transport or simply a tool that leaves our hands free. Babywearing becomes a lifestyle, just as yoga itself is, a choice that also brings several benefits from an energetic point of view."
+      },
+      {
+        "type": "p",
+        "text": "On an energetic level, every person has their own personal space, a sort of radius that starts from their centre and spreads further and further out. When we carry our baby heart to heart, we are allowing them to rest in the most intimate and private part of our personal space, at the level of the fourth chakra (Anahata is the fourth chakra, or heart chakra, “the centre of forgiveness”, the source of true love and of every feeling; it is connected to personal relationships), and this can bring up contrasting feelings such as joy and bliss, but also feelings of intrusion and exposure that create agitation, both in the mother (or whoever is carrying) and in the baby."
+      },
+      {
+        "type": "p",
+        "text": "Carrying heart to heart is a beautiful experience, not only of full sharing and openness with our baby, but also as a way to face our difficulties and find the strength to overcome them. Having someone constantly on our heart can bring traumas, memories, or past suffering to the surface. Facing this together with a yoga practice is a valuable way to relive the sensations we felt as children and give them new or different meanings, which help us, more or less consciously, to grow as parents."
+      },
+      {
+        "type": "p",
+        "text": "Why practise Yoga in Fascia with your baby? Because every moment of our life leads us to “feel” different emotions and a new awareness."
+      },
+      {
+        "type": "p",
+        "text": "And this happens both to those who already practised before pregnancy and to those who started practising during pregnancy."
+      },
+      {
+        "type": "p",
+        "text": "In fact, when approaching yoga there is no need to pay too much attention to technique and therefore to the posture (asana), because it is only a small part of the practice of Yoga in Fascia. In yoga there is love, respect, sharing, cleanliness, purification, kindness; there is listening to the divine within and around us (1)."
+      },
+      {
+        "type": "p",
+        "text": "Yoga in Fascia is practised in a circle, not only physically, being aware of one's body in the surrounding space, but also symbolically. The circle reminds us that we are all on the same level, where there are no teachers and students but people who share their feelings, their experience, and also their personal history, if they wish."
+      },
+      {
+        "type": "p",
+        "text": "In the circle we are not alone, and if we reach out our hand we can find our sister's; in the circle all hands can help one another, one watches the other, one keeps an eye on the other's baby. And if at the end of the class you feel that you have not just done yoga postures but have felt new energy, such a strong connection, a network of mothers that has formed, a new way of feeling, living, and understanding your baby, then you can say you have fully understood the practice of Yoga in Fascia."
+      },
+      {
+        "type": "p",
+        "text": "Notes: (1) Yoga nel post parto, yoga in fascia, Overture Edizioni. (2) Timothy Taylor, University of Bradford, The Artificial Ape."
+      },
+      {
+        "type": "p",
+        "text": "Martina Matarese, Yoga in Fascia® teacher (2019)"
+      }
+    ]
   }
 };
