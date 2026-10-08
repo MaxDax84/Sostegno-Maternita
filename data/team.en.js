@@ -265,8 +265,8 @@ export const teamTranslations = {
     name: "Loretta Bugatti",
     role: "Yoga Teacher, Reiki Master and Moon Mother",
     category: "Yoga",
-    city: "Uster (CH)",
-    address: "Uster (Switzerland)",
+    city: "Roveredo (GR, CH)",
+    address: "Roveredo (Graubünden, Switzerland)",
     bio: "A recognized yoga teacher since 2001 and Yoga Master since 2003, she combines her path with a Degree in Foreign Languages and Literature, the Reiki Master qualification, and a specialization in Yoga for children, teenagers, and families (Rainbow Kids Yoga certification). She believes deeply in the educational value of this philosophy when passed on from an early age, which led her to create the YogAmico teaching kit, followed by the chakra board game Kundalini. Since 2010 she has run training courses for parents and educators who want to learn how to do yoga with children. Alongside her own experience of motherhood, she explored the sacred feminine and women's cyclical nature: specialized in prenatal and postnatal yoga, she earned the Ovarian Breathing Feminine Alchemy (ROAF) certification and the Moon Mother qualification, and she promotes Red Tent circles and seminars that guide women in rediscovering their cyclical and energetic awareness.",
     specialties: [
       "Pregnancy yoga (prenatal and postnatal)",
@@ -275,7 +275,7 @@ export const teamTranslations = {
       "Red Tent facilitator",
       "Reiki Master",
     ],
-    modes: ["In person – Uster (Switzerland)", "Online"],
+    modes: ["In person – Roveredo (Graubünden, Switzerland)", "Online"],
     experience: "Yoga teacher since 2001",
     education: [
       "Moon Mother, level II (2024)",
