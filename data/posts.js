@@ -9067,12 +9067,13 @@ export const posts = [
     "keywords": "fiaba per bambini, yoga per bambini, storia della buonanotte, desideri, yoga della maternità, fiaba yoga, favola con posizioni yoga",
     "category": "Prima infanzia (1-3 anni)",
     "date": "11 giugno 2020",
-    "author": "L. Bugatti",
+    "author": "Loretta Bugatti",
+    "authorSlug": "loretta-bugatti",
     "authorRole": "Insegnante di Yoga EFOA, specialista in yoga della maternità e dell'infanzia",
     "authorAvatar": "LB",
-    "authorColor": "#8A7CA8",
+    "authorColor": "#A0709E",
     "readTime": "4 min",
-    "bgColor": "#5C4A7A",
+    "bgColor": "#7A4E78",
     "content": [
       {
         "type": "p",
@@ -9124,7 +9125,7 @@ export const posts = [
       },
       {
         "type": "p",
-        "text": "L. Bugatti, insegnante Yoga EFOA, specialista in yoga della maternità e dell'infanzia — www.yogacristallo.it"
+        "text": "L. Bugatti, insegnante Yoga EFOA, specialista in yoga della maternità e dell'infanzia (www.yogacristallo.it)"
       }
     ]
   },
@@ -9546,6 +9547,426 @@ export const posts = [
       {
         "type": "p",
         "text": "Dott. M. Mazzanti, medico chirurgo odontoiatra"
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "slug": "lo-yoga-un-alleato-sempre-a-disposizione",
+    "title": "Lo yoga, un alleato sempre a disposizione",
+    "excerpt": "Respirazione, posizioni e visualizzazioni: come lo yoga accompagna la futura mamma dal concepimento al parto, e anche dopo.",
+    "keywords": "yoga in gravidanza, yoga prenatale, respirazione in gravidanza, postura in gravidanza, benessere in gravidanza, contatto con il bambino",
+    "category": "Gravidanza",
+    "date": "26 novembre 2019",
+    "author": "Loretta Bugatti",
+    "authorSlug": "loretta-bugatti",
+    "authorRole": "Insegnante Yoga EFOA, specialista in yoga della maternità e dell'infanzia",
+    "authorAvatar": "LB",
+    "authorColor": "#A0709E",
+    "readTime": "3 min",
+    "bgColor": "#7A4E78",
+    "content": [
+      {
+        "type": "p",
+        "text": "La gravidanza, momento di grandi cambiamenti nella vita di una donna, può essere supportata dallo yoga. La respirazione, le posizioni e le visualizzazioni di questa disciplina offrono un aiuto quotidiano alla madre, dal momento del concepimento fino al parto e oltre."
+      },
+      {
+        "type": "p",
+        "text": "Pratico da quando avevo diciannove anni e, sin dall'inizio questa disciplina mi ha affascinata per la sua semplicità. Con pochi esercizi e un giusto atteggiamento di consapevolezza è possibile cambiare il corso della giornata."
+      },
+      {
+        "type": "p",
+        "text": "Da insegnante ho potuto osservare l'effetto dello yoga su molte persone con vissuti diversi e ho applicato questa esperienza direttamente nella mia pratica personale anche in quei nove mesi dove una nuova vita cresceva dentro di me."
+      },
+      {
+        "type": "p",
+        "text": "È stato un momento davvero speciale dove ho riscoperto nello yoga quel sostegno capace di agire in profondità ma allo stesso tempo con delicatezza."
+      },
+      {
+        "type": "p",
+        "text": "La pratica dello yoga si rivela un aiuto concreto alla donna in quella fase di trasformazione totale del corpo, della psiche, delle emozioni, dell'atteggiamento verso la vita."
+      },
+      {
+        "type": "p",
+        "text": "In particolare mi ha aiutata molto l'attenzione alla respirazione, uno degli elementi fondamentali dello yoga. La consapevolezza nell'ascolto dell'aria che entra ed esce dal nostro corpo, può essere applicata da subito, senza controindicazioni."
+      },
+      {
+        "type": "p",
+        "text": "Tra i molti benefici dello yoga prenatale, quello per me più importante è il potersi mettere in contatto con il bambino. Si crea un legame profondo anche solo a fermarsi, sedersi, iniziare ad ascoltare il proprio respiro e a immaginare di inviare luce e amore alla vita che sta crescendo dentro di noi."
+      },
+      {
+        "type": "p",
+        "text": "Lo yoga sostiene anche nell'aspetto psicologico agevolando una buona preparazione fisico-emotiva ad uno dei momenti più esplosivi nella vita di una donna: il parto (ma approfondirò questo argomento in un altro articolo)."
+      },
+      {
+        "type": "p",
+        "text": "Fare yoga durante la gestazione aiuta inoltre a rendere forti i muscoli e a tenere sotto controllo i possibili dolori alle gambe e alla schiena, che spesso sono inevitabili quando il bambino diventa più grande e pesante. Gli esercizi permettono di controllare la postura, tenendo sempre il corpo ben allineato proprio in base ai cambiamenti in corso."
+      },
+      {
+        "type": "p",
+        "text": "E nel caso non si riesca a praticare direttamente con il corpo, a causa di dolori o fastidi, lo yoga può aiutare anche solo con semplici visualizzazioni."
+      },
+      {
+        "type": "p",
+        "text": "È giusto ricordare che, se non si è mai praticato prima, è bene chiedere consiglio alla propria ostetrica e al proprio medico di fiducia, nonché affidarsi ad un'insegnante con esperienza di yoga in gravidanza."
+      },
+      {
+        "type": "p",
+        "text": "Ogni futura madre può attingere dallo yoga per prendere ciò di cui ha più bisogno."
+      },
+      {
+        "type": "p",
+        "text": "Quindi se sei in dolce attesa non esitare, srotola il tappetino o siediti su un grande cuscino e comincia la pratica."
+      },
+      {
+        "type": "p",
+        "text": "L. Bugatti, insegnante Yoga EFOA, specialista in yoga della maternità e dell'infanzia (www.yogacristallo.it)"
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "slug": "yoga-e-primo-trimestre-di-gravidanza",
+    "title": "Yoga e primo trimestre di gravidanza",
+    "excerpt": "Nel primo trimestre lo yoga aiuta con la respirazione addominale, la postura, il contatto con la terra e il suono delle vocali.",
+    "keywords": "yoga primo trimestre, yoga in gravidanza, respirazione addominale, postura in gravidanza, nausea e stanchezza, esercizi in gravidanza",
+    "category": "Gravidanza",
+    "date": "5 febbraio 2020",
+    "author": "Loretta Bugatti",
+    "authorSlug": "loretta-bugatti",
+    "authorRole": "Insegnante Yoga EFOA, specialista in yoga della maternità e dell'infanzia",
+    "authorAvatar": "LB",
+    "authorColor": "#A0709E",
+    "readTime": "3 min",
+    "bgColor": "#7A4E78",
+    "content": [
+      {
+        "type": "p",
+        "text": "Il primo trimestre di gravidanza, è il momento della creazione, quando una nuova vita inizia a crescere dentro di noi."
+      },
+      {
+        "type": "p",
+        "text": "Capita spesso che se ne venga a conoscenza solo dopo alcune settimane e anche se ancora non appaiono segni visibili, dentro alla futura mamma stanno avvenendo dei grandi cambiamenti."
+      },
+      {
+        "type": "p",
+        "text": "Questi mutamenti possono essere causa di nausee e stanchezza, fino a quando il corpo si sarà adattato al nuovo stato."
+      },
+      {
+        "type": "p",
+        "text": "Un costante senso di sonnolenza ci accompagnerà nelle prime dodici settimane di gestazione, perché il nostro corpo sta attingendo a tutte le sue forze per creare il nostro bambino."
+      },
+      {
+        "type": "p",
+        "text": "In questo periodo si può iniziare ad essere consapevoli della nostra nuova condizione."
+      },
+      {
+        "type": "p",
+        "text": "Già dal momento del concepimento la nuova vita si connette a noi e vive tutto quello che viviamo. Si nutre del nostro cibo, delle nostre emozioni, dei nostri pensieri, del nostro sentire."
+      },
+      {
+        "type": "p",
+        "text": "Per questo motivo bisogna cercare di essere tranquille, serene e gioiose."
+      },
+      {
+        "type": "p",
+        "text": "Bisogna prendersi il tempo per riposare, ascoltarsi, entrare in contatto con il nostro bambino."
+      },
+      {
+        "type": "p",
+        "text": "Lo yoga ci può aiutare soprattutto con la respirazione addominale. Essere consapevoli dell'aria che entra ed esce dal corpo seguendone il percorso dalla pancia è un ottimo supporto per sentirsi calme."
+      },
+      {
+        "type": "p",
+        "text": "Stiamo respirando per noi e per il nostro bambino, e imparare a respirare in modo completo e rilassato aumenterà il livello di ossigeno per entrambi."
+      },
+      {
+        "type": "p",
+        "text": "Una buona respirazione massaggerà gli organi interni e stimolerà la circolazione e la digestione."
+      },
+      {
+        "type": "p",
+        "text": "Nel primo trimestre è molto importante portare l'attenzione alla postura. Testa e collo sono eretti e bilanciati tra le spalle, la colonna vertebrale e il bacino vanno ben allineati. I muscoli addominali e pelvici devono essere forti per supportare la crescita del bambino."
+      },
+      {
+        "type": "p",
+        "text": "Il torace va tenuto aperto così che i muscoli della respirazione possano lavorare al meglio. In questi mesi, sono particolarmente consigliati gli asana da eseguire in piedi per rafforzare le gambe e migliorare la circolazione del sangue."
+      },
+      {
+        "type": "p",
+        "text": "È sempre sconsigliato invece forzare o creare tensioni sull'addome, così come le posizioni capovolte."
+      },
+      {
+        "type": "p",
+        "text": "Possiamo trascorrere del tempo nella natura entrando in connessione con l'elemento terra che ci collega alla creazione."
+      },
+      {
+        "type": "p",
+        "text": "Questo significa ad esempio camminare scalzi su un prato, sentendo il contatto del piede ad ogni passo. Possiamo anche sdraiarci e immaginare il corpo che riceve un grande sostegno dalla terra, elemento che dona stabilità e sicurezza."
+      },
+      {
+        "type": "p",
+        "text": "Se non si può andare in natura, questi semplici esercizi di consapevolezza possono essere fatti in casa, ritagliandosi un momento tutto per noi."
+      },
+      {
+        "type": "p",
+        "text": "Un altro grande aiuto lo possiamo ricevere dai suoni. Usare la voce per ripetere ad esempio le vocali, nella sequenza I, E, A, O, U è un ottimo modo per raggiungere e massaggiare tutte le parti del corpo. Per eseguire questo esercizio serve una posizione comoda, in piedi o sedute. Inspirare dal naso e poi cominciare ad emettere il suono I, fino a che l'espiro è concluso. Poi di nuovo, per tre o quattro volte."
+      },
+      {
+        "type": "p",
+        "text": "Quindi si passa al suono E, ancora per tre o quattro respiri e si continua poi con i successivi. Al termine, per qualche minuto, si resta in ascolto della vibrazione che i suoni hanno lasciato nel nostro corpo."
+      },
+      {
+        "type": "p",
+        "text": "Il nostro viaggio verso la nascita è appena all'inizio, cerchiamo di renderlo meraviglioso in ogni suo momento."
+      },
+      {
+        "type": "p",
+        "text": "Nella sezione video del mio sito (https://yogacristallo.it/video) si trovano alcuni semplici esercizi che possono essere eseguiti durante la gravidanza, già dal primo trimestre."
+      },
+      {
+        "type": "p",
+        "text": "L. Bugatti, insegnante Yoga EFOA, specialista in yoga della maternità e dell'infanzia (www.yogacristallo.it)"
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "slug": "yoga-e-secondo-trimestre-di-gravidanza",
+    "title": "Yoga e secondo trimestre di gravidanza",
+    "excerpt": "Dalla quattordicesima alla ventottesima settimana: postura, posizione della montagna e saluto al sole adattato per la gravidanza.",
+    "keywords": "yoga secondo trimestre, yoga in gravidanza, posizione della montagna, saluto al sole in gravidanza, mal di schiena in gravidanza, postura",
+    "category": "Gravidanza",
+    "date": "14 aprile 2020",
+    "author": "Loretta Bugatti",
+    "authorSlug": "loretta-bugatti",
+    "authorRole": "Insegnante Yoga EFOA, specialista in yoga della maternità e dell'infanzia",
+    "authorAvatar": "LB",
+    "authorColor": "#A0709E",
+    "readTime": "3 min",
+    "bgColor": "#7A4E78",
+    "content": [
+      {
+        "type": "p",
+        "text": "In questi giorni, che ci costringono in casa, se siamo in dolce attesa, cerchiamo di rimanere forti e cariche per noi e per il nostro bambino. Ora più che mai, possiamo entrare in profondo contatto con il nostro mondo interiore."
+      },
+      {
+        "type": "p",
+        "text": "Il secondo trimestre di gravidanza va dalla quattordicesima alla ventottesima settimana."
+      },
+      {
+        "type": "p",
+        "text": "In questo periodo, il corpo cambia visibilmente e il nostro scopo è quello di accompagnarlo attraverso i suoi cambiamenti."
+      },
+      {
+        "type": "p",
+        "text": "Diventiamo più consapevoli della nuova vita che sta crescendo dentro di noi e impariamo ad essere più connesse ad essa."
+      },
+      {
+        "type": "p",
+        "text": "Questo è il momento ideale in cui gioire della pratica yogica, che va sempre adattata alla crescita dell'utero."
+      },
+      {
+        "type": "p",
+        "text": "Il peso della pancia inizierà infatti a sollecitare la zona lombare, cosa che potrebbe provocare fastidi alla schiena. Aiutiamoci portando l'attenzione alla postura con queste domande: Dove sento il mio peso? Su entrambi i piedi? Più verso la punta o verso i talloni? La colonna vertebrale è diritta verso l'alto oppure è incurvata?"
+      },
+      {
+        "type": "p",
+        "text": "Ora, con maggiore consapevolezza del corpo, distribuiamo il peso equamente su entrambi i piedi, né troppo avanti né troppo indietro e allineiamo la colonna verso il cielo."
+      },
+      {
+        "type": "p",
+        "text": "Questo semplice esercizio può essere fatto in qualsiasi momento della giornata come valido supporto per mantenere una schiena sana e forte."
+      },
+      {
+        "type": "p",
+        "text": "Possiamo avere un altro ottimo aiuto dalla posizione della montagna. Un asana, tra i più semplici e potenti dello yoga, in grado di donare sia forza che tranquillità."
+      },
+      {
+        "type": "p",
+        "text": "In posizione verticale, i piedi e le gambe uniti, la colonna allineata al cielo. Apriamo leggermente le braccia verso l'esterno come se fossero i fianchi di una montagna e si resta in posizione statica."
+      },
+      {
+        "type": "p",
+        "text": "Dopo qualche respiro, immaginiamo di assorbire una luce gialla che, dai piedi, porta dentro di noi la forza della terra e, dalla testa, una luce azzurra che dona la tranquillità del cielo. Teniamo la posizione per qualche respiro e poi sciogliamola, portando le mani sulla pancia e restando qualche istante nell'ascolto."
+      },
+      {
+        "type": "p",
+        "text": "Durante questo importante momento, permettiamo al nostro mondo interiore di assorbire i benefici che l'asana ha messo in movimento. In gravidanza questo ci permette di entrare in contatto profondo con la vita che cresce dentro di noi."
+      },
+      {
+        "type": "p",
+        "text": "Inoltre, nel secondo trimestre, la nausea e la stanchezza dei primi mesi diminuiscono o svaniscono del tutto e cominciamo ad avere un'aura di nuova vitalità."
+      },
+      {
+        "type": "p",
+        "text": "Grazie al saluto al sole, adattato per i mesi di gravidanza, possiamo sentirci cariche e piene di nuova energia. E con i movimenti del gatto sciogliamo e rendiamo flessibili bacino e colonna vertebrale. Trovate entrambi questi esercizi a questo link https://yogacristallo.it/video/"
+      },
+      {
+        "type": "p",
+        "text": "Sperimentate con gioia e contattatemi per farmi sapere le vostre esperienze."
+      },
+      {
+        "type": "p",
+        "text": "Questi mesi vanno celebrati in ogni istante, per questo è importante essere connesse alla bellezza. Bisogna anche comprendere che la gravidanza è molte cose, ha i suoi lati luminosi e i suoi lati oscuri. Li possiamo osservare e accogliere entrambi."
+      },
+      {
+        "type": "p",
+        "text": "Un fantastico esercizio, che ho trovato molto utile, è percepire dove si creano le nostre paure e preoccupazioni, quindi scuotiamo tutto il corpo dalle braccia alle gambe, come se fossimo fatte di morbida stoffa e poi con un espiro lasciamole andare. Quindi ci fermiamo qualche istante e immaginiamo di essere avvolte da una luce dorata."
+      },
+      {
+        "type": "p",
+        "text": "Riscopriamoci ogni giorno, ogni momento e restiamo sempre connesse al respiro e al nostro bambino inviandogli serenità, calma e gioia."
+      },
+      {
+        "type": "p",
+        "text": "L. Bugatti, insegnante Yoga EFOA, specialista in yoga della maternità e dell'infanzia (www.yogacristallo.it)"
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "slug": "cose-lo-yoga-in-fascia-prima-parte",
+    "title": "Yoga in Fascia® (prima parte)",
+    "excerpt": "Lo yoga in fascia unisce gravidanza e post partum: praticare cuore a cuore con il proprio bambino e riscoprire l'arte antica del portare.",
+    "keywords": "yoga in fascia, yoga post partum, babywearing, portare in fascia, yoga con il neonato, arte del portare",
+    "category": "Puerperio",
+    "date": "28 luglio 2020",
+    "author": "Martina Matarese",
+    "authorRole": "Insegnante di Yoga in Fascia®",
+    "authorAvatar": "MM",
+    "authorColor": "#5E9A8C",
+    "readTime": "3 min",
+    "bgColor": "#3F7A6C",
+    "content": [
+      {
+        "type": "highlight",
+        "text": "Respira, porta cuore a cuore e torna a sentire"
+      },
+      {
+        "type": "p",
+        "text": "Una morbida carezza, il contatto pelle a pelle, il calore, i cuori che si uniscono... Di cosa sto parlando? Dello Yoga in fascia naturalmente."
+      },
+      {
+        "type": "p",
+        "text": "Cosa c'è di più bello dopo aver praticato yoga in gravidanza che poter proseguire lo yoga insieme al tuo bambino pelle a pelle? Lo yoga in fascia infatti è nato per unire il momento della gravidanza con quello del post partum. Far conoscere a tutte le nuove mamme l'arte del portare per poter praticare insieme, cuore a cuore."
+      },
+      {
+        "type": "p",
+        "text": "Intanto mi sembra doveroso presentarmi: sono Martina Matarese, vivo nella provincia di Pisa, insegno Hatha Yoga e Yoga in gravidanza dal 2008 e sono entrata nel meraviglioso mondo dello Yoga in Fascia nel 2019."
+      },
+      {
+        "type": "p",
+        "text": "L'ho scoperto per caso (anche se non credo molto al caso a dir la verità): stavo cercando qualche corso come approfondimento nel campo dello yoga in gravidanza o del post partum, e l'ho trovato, anzi finalmente ho trovato quell'anello che unisce questi due momenti indimenticabili, così ho conosciuto Micaela telefonicamente e in seguito Stefania, le mie maestre che insieme anche ad altri insegnanti mi hanno formato e letteralmente trasportata in questo mondo magico dello Yoga in Fascia."
+      },
+      {
+        "type": "p",
+        "text": "La formazione per me è stata importantissima e mi ha aperto davvero gli occhi su tutte le potenzialità di questa pratica così necessaria e benefica."
+      },
+      {
+        "type": "p",
+        "text": "Infatti, una volta che finalmente è nato un bambino/a ed è nata una mamma (con tutte le gioie ma anche le paure e le difficoltà che si possono incontrare in una gravidanza o durante il parto), perché tra di essi avvenga un meraviglioso incontro che aiuti a ritrovare un momento di unione, serve una pratica che faciliti la comunicazione 'verbale e no' tra di loro."
+      },
+      {
+        "type": "p",
+        "text": "Una mamma che non dovrebbe fare altro che avere le condizioni e gli strumenti giusti per ascoltare i propri bisogni e quelli del proprio bambino e lasciare andare... riconoscersi in movimenti dolci di apertura di coccole ma anche di raccoglimento: sembra quasi una danza magica, unica nel suo genere così intima e naturale."
+      },
+      {
+        "type": "p",
+        "text": "L'arte del portare la si impara dai tempi antichi ed è diffusa in tutto il mondo; risale a 50 anni fa la rivoluzione tecnologica, ovvero la nascita di supporti per poter trasportare i propri bambini."
+      },
+      {
+        "type": "p",
+        "text": "L'invenzione di questi supporti avrebbe allungato la gestazione e quindi allungato e migliorato le possibilità dei cuccioli d'uomo di arrivare alla maturazione di cranio e organismo."
+      },
+      {
+        "type": "p",
+        "text": "Con l'avvento di agricoltura e stanzialità, i modi di portare i bambini cambiano per aumentarne le possibilità di sopravvivenza. (cit. T. Taylor – Università di Bradford – La scimmia artificiale)"
+      },
+      {
+        "type": "p",
+        "text": "In ogni paese o area del mondo ha trovato maggior diffusione uno specifico supporto, in grado più di altri di soddisfare bisogni specifici, in base al clima caldo o freddo, ai tipi di attività svolte dalle madri, alle posizioni del portare culturali/tradizionali."
+      },
+      {
+        "type": "p",
+        "text": "Il clima ha ovviamente avuto una forte influenza sui tipi di supporti utilizzati, sia per quanto riguarda i materiali (il tessuto, lo spessore), sia per la posizione del bambino, che infine per la propensione stessa al portare i bambini, con implicazioni che diremmo “socioculturali”."
+      },
+      {
+        "type": "p",
+        "text": "Bibliografia e riferimenti: M. Placentino, V. Contessi, Yoga nel post parto, yoga in fascia, Overture ed.; www.babywearingitalia.it"
+      },
+      {
+        "type": "p",
+        "text": "Martina Matarese, insegnante di yoga in fascia (Instagram: @yogamartina)"
+      }
+    ]
+  },
+  {
+    "id": 173,
+    "slug": "yoga-in-fascia-seconda-parte",
+    "title": "Yoga in Fascia® (seconda parte)",
+    "excerpt": "L'evoluzione del portare: perché la fascia oggi è una scelta di stile di vita e perché lo yoga in fascia si pratica in cerchio.",
+    "keywords": "yoga in fascia, portare in fascia, babywearing, yoga post partum, chakra del cuore, cerchio di mamme",
+    "category": "Puerperio",
+    "date": "19 agosto 2020",
+    "author": "Martina Matarese",
+    "authorRole": "Insegnante di Yoga in Fascia®",
+    "authorAvatar": "MM",
+    "authorColor": "#5E9A8C",
+    "readTime": "4 min",
+    "bgColor": "#3F7A6C",
+    "content": [
+      {
+        "type": "h2",
+        "text": "L'evoluzione del portare"
+      },
+      {
+        "type": "highlight",
+        "text": "“La fascia è una modalità (diversa) per stare (bene) insieme” (1)"
+      },
+      {
+        "type": "p",
+        "text": "In tempi moderni portare in fascia può prendere nuovi significati: il supporto con cui viene trasportato il bambino adesso sicuramente è una alternativa tra le tante oppure una scelta ottima e ben ponderata a differenza della necessità di sopravvivenza di un tempo. Vi spiegherò perché."
+      },
+      {
+        "type": "p",
+        "text": "Oltre a benefici per la crescita e lo sviluppo dei bambini (documentati scientificamente) “sembra che le maggiori dimensioni del cervello umano furono rese possibili proprio dall'invenzione di supporti per portare i bambini” (2). Adesso quando portiamo un bambino in fascia non stiamo utilizzando un mezzo di trasporto o comunque uno strumento che ci permette di avere le mani libere. Il portare diventa uno stile di vita come è lo Yoga stesso, una scelta che anche dal punto di vista energetico presenta vari benefici."
+      },
+      {
+        "type": "p",
+        "text": "A livello energetico ogni persona ha un proprio spazio personale, ovvero una sorta di raggio che parte dal suo centro e si diffonde sempre più lontano. Quando portiamo cuore a cuore il nostro bambino, gli stiamo quindi permettendo di sostare nella parte più intima e privata del nostro spazio personale, all'altezza del quarto chakra (Anahata è il quarto chakra, o chakra del cuore, “il centro del perdono”, la fonte del vero amore e di ogni sentimento; è connesso alle relazioni personali) e questo può portare a sentire sentimenti contrastanti come gioia e beatitudine ma anche sensazioni di invadenza di messa a nudo che creano agitazione, sia alla mamma (o a chi porta) che al bambino."
+      },
+      {
+        "type": "p",
+        "text": "Portare cuore a cuore è un'esperienza bellissima, non solo di piena condivisione e apertura con il nostro bambino, ma anche come mezzo per affrontare le nostre difficoltà e trovare la forza per superarle. Avere qualcuno costantemente sul nostro cuore può portare all'emergere di traumi, ricordi o sofferenze vissute nel passato. Affrontare questo insieme ad una pratica Yoga, è un valido mezzo per poter rivivere quelle sensazioni provate da bambini, dar loro nuovi o altri significati, che ci aiutano, in modo più o meno consapevole, a maturare la nostra genitorialità."
+      },
+      {
+        "type": "p",
+        "text": "Perché praticare Yoga in fascia con il proprio bambino? Perché ogni momento della nostra vita porta a “sentire” emozioni diverse e una nuova consapevolezza."
+      },
+      {
+        "type": "p",
+        "text": "E questo capita sia a chi praticava già prima della gravidanza, sia a chi ha iniziato a praticare in gravidanza."
+      },
+      {
+        "type": "p",
+        "text": "Infatti quando ci si approccia allo yoga non c'è da porre troppa attenzione alla tecnica e quindi alla posizione (asana) perché è una minima parte della pratica dello Yoga in Fascia. Nello Yoga c'è amore, rispetto, condivisione, pulizia, purificazione, gentilezza, c'è ascolto del divino dentro e fuori di noi (1)."
+      },
+      {
+        "type": "p",
+        "text": "Lo Yoga in fascia si pratica in cerchio non solo fisicamente, avendo coscienza del proprio corpo nello spazio circostante, ma lo si fa anche simbolicamente. Il cerchio ci ricorda che siamo allo stesso livello dove non ci sono maestri ed allievi ma persone che condividono il proprio sentire, la propria esperienza e anche il proprio vissuto, se lo si vuole."
+      },
+      {
+        "type": "p",
+        "text": "Nel cerchio non siamo sole e se allunghiamo la mano possiamo trovare quella della nostra sorella, nel cerchio tutte le mani possono aiutarsi, una osserva l'altra, una tiene d'occhio il bambino dell'altra. E se alla fine della lezione ti sembrerà di non aver fatto solo posizioni yoga ma di aver sentito nuova energia, una connessione così forte, una rete di mamme che si è creata, un nuovo modo di sentire, vivere e comprendere il tuo bambino, allora puoi dire di aver compreso in pieno la pratica dello Yoga in Fascia."
+      },
+      {
+        "type": "p",
+        "text": "Note: (1) Yoga nel post parto, yoga in fascia, Overture Edizioni. (2) Timothy Taylor, Università di Bradford, La scimmia artificiale."
+      },
+      {
+        "type": "p",
+        "text": "Martina Matarese, insegnante di Yoga in Fascia® (2019)"
       }
     ]
   }

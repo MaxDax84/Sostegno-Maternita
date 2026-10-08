@@ -63,6 +63,9 @@ const nextConfig = {
       // creerebbe un loop (la pagina reindirizzerebbe a se stessa). Il
       // middleware la gestisce già correttamente da sola.
       ...withLocaleVariants("/privacy-policy-2", "/it/privacy-policy"),
+      // Articolo migrato con uno slug diverso da quello originale ("/yoga"
+      // era troppo generico come URL di un articolo).
+      ...withLocaleVariants("/yoga", "/it/blog/yoga-in-fascia-seconda-parte"),
     ]
 
     // Tutto il resto del vecchio sito (~130 URL, per lo più articoli storici
@@ -87,7 +90,7 @@ const nextConfig = {
       "come-curare-il-bacino-della-donna-in-gravidanza",
       "come-deve-essere-trattato-il-moncone-ombelicale-del-neonato",
       "come-mai-le-donne-incinte-spesso-fanno-sogni-popolati-da-animali",
-      "come-vivere-bene-il-riposo-forzato-in-maternita", "cose-lo-yoga-in-fascia-prima-parte",
+      "come-vivere-bene-il-riposo-forzato-in-maternita",
       "costruisci-il-tuo-nido", "curare-le-radici-per-dar-vita-a-un-nuovo-virgulto",
       "da-coppia-a-famiglia", "dire-no-per-nove-mesi", "diventare-mamma-a-ventanni",
       "diventare-papa-a-ventanni", "dove-nasce-linsicurezza-di-molte-neo-mamme",
@@ -124,7 +127,7 @@ const nextConfig = {
       "limportanza-dellattaccamento-del-bambino-per-il-genitore",
       "limportanza-delle-circostanze-in-cui-un-bambino-viene-concepito", "limportanza-delle-origini",
       "linterazione-con-il-bebe-nel-primo-mese-di-vita", "lo-sviluppo-della-motricita-912-18-mesi-seconda-parte",
-      "lo-sviluppo-della-motricita-dai-9-ai-12-18-mesi-prima-parte", "lo-yoga-un-alleato-sempre-a-disposizione",
+      "lo-sviluppo-della-motricita-dai-9-ai-12-18-mesi-prima-parte",
       "losteopatia-in-gravidanza", "mai-piu-sola", "maternita-e-tecniche-olistiche-un-aiuto-concreto",
       "medicinali-e-gravidanza", "metodi-per-controllare-il-dolore-del-parto-parte-prima",
       "metodi-psicologici-per-controllare-il-dolore-del-parto-seconda-parte", "nausea-e-vomito-in-gravidanza-6-2",
@@ -138,8 +141,7 @@ const nextConfig = {
       "scegliere-il-servizio-educativo-per-la-prima-infanzia-consigli-per-genitori-consapevoli",
       "speranza-di-gustav-klimt", "tag", "test-di-gravidanza", "tra-madre-e-suocera",
       "un-litigio-con-la-mamma", "un-modo-insolito-per-affrontare-i-problemi-di-sonno-del-bebe",
-      "un-sogno-angoscioso-13", "una-richiesta-di-aborto", "voglio-un-figlio-anzidue", "yoga",
-      "yoga-e-primo-trimestre-di-gravidanza", "yoga-e-secondo-trimestre-di-gravidanza",
+      "un-sogno-angoscioso-13", "una-richiesta-di-aborto", "voglio-un-figlio-anzidue",
     ].flatMap((slug) => withLocaleVariants(`/${slug}`, "/it/blog"))
 
     return [
