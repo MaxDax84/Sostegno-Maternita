@@ -406,6 +406,7 @@ export const teamMembers = [
     city: "Bergamo / Uster (CH)",
     address: "Bergamo / Uster (Svizzera)",
     contact: "info@yogacristallo.it",
+    whatsapp: ["393471473467", "41788471225"],
     avatar: "LB",
     color: "#A0709E",
     bgColor: "#7A4E78",
@@ -418,6 +419,7 @@ export const teamMembers = [
       "Reiki Master",
     ],
     website: "https://yogacristallo.it/",
+    facebook: "https://www.facebook.com/YogaCristallo",
     modes: ["In presenza – Bergamo", "In presenza – Uster (Svizzera)"],
     experience: "Insegnante yoga dal 2001",
     education: [
