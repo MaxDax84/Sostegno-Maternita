@@ -93,8 +93,10 @@ export const teamTranslations = {
     modes: ["In person – Piacenza", "Online"],
     experience: "",
     education: [
-      "«First Thousand Days of Life» Course, University of Florence",
-      "Specialized training in perinatal loss support, CiaoLapo",
+      // vedi la nota in data/team.js: per Simona Bensi niente "specialized",
+      // i corsi vanno citati con il loro nome
+      "«I primi mille giorni» advanced course, University of Florence",
+      "«La morte in attesa» training in perinatal loss support, CiaoLapo",
     ],
   },
   "marcella-marcone": {

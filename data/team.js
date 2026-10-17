@@ -146,8 +146,12 @@ export const teamMembers = [
     modes: ["In presenza – Piacenza", "Online"],
     experience: "",
     education: [
-      "Corso «I Primi Mille Giorni di Vita», Università di Firenze",
-      "Formazione specialistica in accompagnamento al lutto perinatale, CiaoLapo",
+      // "specialistica"/"specializzata" non si usano per Simona Bensi: l'Ordine
+      // degli Psicologi dell'Emilia-Romagna le ha contestato per iscritto i titoli
+      // non riconosciuti. Qui si citano i corsi con il loro nome esatto, come sul
+      // suo sito. Vale solo per lei, non per le colleghe psicoterapeute.
+      "Corso di perfezionamento «I primi mille giorni», Università di Firenze",
+      "Formazione «La morte in attesa. Sostegno al lutto perinatale, un modello salutogenico e trauma-orientato», CiaoLapo",
     ],
   },
   {
